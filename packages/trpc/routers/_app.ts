@@ -1,4 +1,5 @@
 import { router } from "../index";
+import { repopilotRouter } from "./repopilot";
 import { adminAppRouter } from "./admin";
 import { apiKeysAppRouter } from "./apiKeys";
 import { assetsAppRouter } from "./assets";
@@ -19,6 +20,7 @@ import { usersAppRouter } from "./users";
 import { webhooksAppRouter } from "./webhooks";
 
 export const appRouter = router({
+  repopilot: repopilotRouter,
   bookmarks: bookmarksAppRouter,
   apiKeys: apiKeysAppRouter,
   users: usersAppRouter,

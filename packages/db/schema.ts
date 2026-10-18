@@ -10,6 +10,7 @@ import {
   sqliteTable,
   text,
   unique,
+  uniqueIndex,
 } from "drizzle-orm/sqlite-core";
 
 import type { ZApiKeyScope } from "@karakeep/shared/types/apiKeys";
@@ -22,6 +23,128 @@ function createdAtField(colName = "createdAt") {
     .notNull()
     .$defaultFn(() => new Date());
 }
+
+export const researchRuns = sqliteTable(
+  "repopilot_research_runs",
+  {
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    userId: text("userId")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    repoFullName: text("repoFullName").notNull(),
+    repoUrl: text("repoUrl").notNull(),
+    status: text("status", {
+      enum: [
+        "queued",
+        "running",
+        "completed",
+        "partial",
+        "failed",
+        "cancelled",
+      ],
+    })
+      .notNull()
+      .default("queued"),
+    stage: text("stage").notNull().default("queued"),
+    progress: integer("progress").notNull().default(0),
+    userProfileJson: text("userProfileJson").notNull(),
+    repoSnapshotJson: text("repoSnapshotJson"),
+    reportJson: text("reportJson"),
+    traceJson: text("traceJson").notNull().default("[]"),
+    mode: text("mode", { enum: ["mock", "live"] })
+      .notNull()
+      .default("mock"),
+    errorCode: text("errorCode"),
+    errorMessage: text("errorMessage"),
+    bookmarkId: text("bookmarkId").references(() => bookmarks.id, {
+      onDelete: "set null",
+    }),
+    promptVersion: text("promptVersion"),
+    modelName: text("modelName"),
+    inputTokens: integer("inputTokens"),
+    outputTokens: integer("outputTokens"),
+    estimatedCostUsd: real("estimatedCostUsd"),
+    leaseToken: text("leaseToken"),
+    leaseExpiresAt: integer("leaseExpiresAt"),
+    attempts: integer("attempts").notNull().default(0),
+    createdAt: integer("createdAt")
+      .notNull()
+      .$defaultFn(() => Date.now()),
+    startedAt: integer("startedAt"),
+    completedAt: integer("completedAt"),
+    updatedAt: integer("updatedAt")
+      .notNull()
+      .$defaultFn(() => Date.now()),
+  },
+  (t) => [
+    index("repopilot_user_created").on(t.userId, t.createdAt),
+    uniqueIndex("repopilot_one_active_user")
+      .on(t.userId)
+      .where(sql`${t.status} in ('queued', 'running')`),
+  ],
+);
+
+export const researchEvidence = sqliteTable(
+  "repopilot_evidence",
+  {
+    id: text("id").primaryKey(),
+    runId: text("runId")
+      .notNull()
+      .references(() => researchRuns.id, { onDelete: "cascade" }),
+    sourceType: text("sourceType").notNull(),
+    sourceUrl: text("sourceUrl").notNull(),
+    sourceTitle: text("sourceTitle").notNull(),
+    excerpt: text("excerpt").notNull(),
+    fetchedAt: text("fetchedAt").notNull(),
+    externalId: text("externalId").notNull(),
+    repoFullName: text("repoFullName").notNull(),
+    metadataJson: text("metadataJson").notNull(),
+  },
+  (t) => [index("repopilot_evidence_run").on(t.runId)],
+);
+
+export const researchFeedback = sqliteTable(
+  "repopilot_feedback",
+  {
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    userId: text("userId")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    runId: text("runId")
+      .notNull()
+      .references(() => researchRuns.id, { onDelete: "cascade" }),
+    opportunityId: text("opportunityId").notNull(),
+    rating: text("rating", { enum: ["helpful", "unhelpful"] }),
+    adopted: integer("adopted", { mode: "boolean" }).notNull().default(false),
+    createdAt: integer("createdAt")
+      .notNull()
+      .$defaultFn(() => Date.now()),
+  },
+  (t) => [
+    uniqueIndex("repopilot_feedback_once").on(
+      t.userId,
+      t.runId,
+      t.opportunityId,
+    ),
+  ],
+);
+
+export const researchEvents = sqliteTable("repopilot_events", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  runId: text("runId")
+    .notNull()
+    .references(() => researchRuns.id, { onDelete: "cascade" }),
+  name: text("name").notNull(),
+  createdAt: integer("createdAt")
+    .notNull()
+    .$defaultFn(() => Date.now()),
+});
 
 function createdAtMsField() {
   return integer("createdAt", { mode: "timestamp_ms" })

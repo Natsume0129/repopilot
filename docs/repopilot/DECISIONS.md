@@ -31,3 +31,12 @@
 - Added authenticated /repopilot and /repopilot/runs/[id], reusing the dashboard layout/session and existing UI controls. No fictional history; explicit empty preview until persistence exists.
 - Added shared bounded repository/profile validation. 13 URL normalization and rejection cases PASS: `npx --yes pnpm@11.2.1 exec vitest run repopilot/input.test.ts` (packages/shared).
 - `node scripts/repopilot-baseline.mjs --repopilot` PASS: navigation, reload, 1280/390 viewport overflow checks, anonymous redirect, plus existing signup/login/bookmark flow.
+
+## Phase 2
+
+- Added Drizzle-generated migration 0095, research/evidence/feedback and minimal local event tables; protected session-only tRPC procedures with per-owner filtering and a partial unique index for one active task per user.
+- Durable queue decision: runs are themselves SQLite jobs. The existing Liteque adapter stores jobs in a separate queue.db, so insertion and enqueue cannot share a transaction. A small DB-backed worker in the existing workers app avoids the dual-write gap. Claims use immediate transactions, bounded attempts and fencing tokens; Phase 4 attaches execution/polling. No background work inside HTTP requests.
+- Added lease recovery primitive; expired work is reclaimed and stale attempts cannot save. Retry makes a separate run.
+- Bookmark integration calls the actual existing bookmarks router, preserving its validation and side effects.
+- `npx --yes pnpm@11.2.1 db:generate --name repopilot_research`, then `db:migrate`: PASS.
+- `npx --yes pnpm@11.2.1 exec vitest run routers/repopilot.test.ts` (packages/trpc): PASS 2 integration scenarios, including fresh migrated test databases, all owner checks, creation/list/deletion, dedup, lease recovery/fencing, retry, bookmark reuse and feedback validation.
