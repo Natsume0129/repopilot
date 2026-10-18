@@ -4,6 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "repopilot:setup": "node scripts/repopilot-setup.mjs",
+    "repopilot:dev": "node scripts/repopilot-dev.mjs --mock",
+    "repopilot:live": "node scripts/repopilot-dev.mjs --live",
+    "repopilot:e2e": "node scripts/repopilot-e2e.mjs",
+    "repopilot:smoke:github": "tsx scripts/repopilot-live-smoke.ts",
+    "repopilot:smoke:live": "tsx scripts/repopilot-live-smoke.ts --live",
     "build": "turbo build",
     "dev": "turbo dev --parallel",
     "clean": "git clean -xdf node_modules",

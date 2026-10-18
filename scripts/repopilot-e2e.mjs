@@ -99,6 +99,9 @@ try {
       throw new Error(`Report overflow at ${width}`);
   }
   await page.setViewportSize({ width: 1280, height: 900 });
+  await page
+    .getByRole("heading", { name: "langgenius/dify · 研究报告", exact: true })
+    .scrollIntoViewIfNeeded();
   await mkdir("data/repopilot-demo", { recursive: true });
   await page.screenshot({
     path: "data/repopilot-demo/report.png",

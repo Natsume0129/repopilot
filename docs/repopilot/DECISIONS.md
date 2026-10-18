@@ -82,3 +82,14 @@
 - `pnpm format` with those filters: FAIL because untouched checkout files use CRLF (git ls-files --eol confirms index LF / worktree CRLF, e.g. shared/assetdb.ts, db/drizzle.ts, web/server/auth.ts; no diffs in these files). Avoid unrelated mass formatting. Direct oxfmt --check on all 33 added/modified TS/TSX/MJS files: PASS.
 - Mock research never fetches externally. Saving a bookmark deliberately reuses upstream lifecycle and may enqueue normal crawler jobs; for a strictly offline demo start workers with WORKERS_ENABLED_WORKERS=repopilot. This preserves the bookmark business logic instead of silently disabling global crawl protections.
 - Prompt-injection tests verify data separation and fixed tool bounds, not a claim of perfect LLM semantic resistance. Reference existence is mechanically verified; relevance and actual unresolved demand still require human review.
+
+## Phase 7
+
+- Delivered README-REPOPILOT, PRD, ARCHITECTURE, TEST_REPORT, DEMO_SCRIPT, CHANGELOG, .env.example, setup and unified mock/live launchers, optional GitHub/live smoke commands.
+- `node scripts/repopilot-setup.mjs`: PASS, preserves existing local secrets.
+- `pnpm repopilot:dev`: PASS, starts Next.js and only RepoPilot worker; no original crawler network work in offline demo. Existing raw web/workers sessions were stopped before this run.
+- `pnpm repopilot:e2e` against the new offline launcher: PASS complete flow including second-user denial and anonymous redirect; screenshot refreshed at data/repopilot-demo/report.png.
+- `pnpm repopilot:smoke:github`: PASS 6 actual requests, repository/README and 3 issue references checked against details (#44292, #43455, #44289).
+- `pnpm repopilot:smoke:live`: SKIPPED, no model credentials. First script attempts exposed root CJS top-level-await/workspace-resolution issues; corrected async main and relative entrypoints before successful smoke.
+- New delivery scripts oxlint/oxfmt PASS; git check-ignore confirms root/app/db .env and local screenshots excluded. No external publishing, push, credentials or real user data committed.
+- Final acceptance remains qualified: local Mock MVP works; live LLM, original crawler DNS and Meilisearch search await environment/configuration. No P1 work added.
