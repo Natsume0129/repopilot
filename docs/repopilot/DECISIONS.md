@@ -25,3 +25,9 @@
 - Upstream Vitest warns about nested vi.mock hoisting and the tsconfig-paths plugin; tests pass without changing upstream code.
 
 - Commit hook could not find pnpm under Git Bash (only a Windows .cmd shim is installed). For staged baseline documentation/smoke script, ran scoped checks above and formatting; use HUSKY=0 for local commits instead of the hook's unrelated whole-monorepo preflight, per requested minimal verification policy.
+
+## Phase 1
+
+- Added authenticated /repopilot and /repopilot/runs/[id], reusing the dashboard layout/session and existing UI controls. No fictional history; explicit empty preview until persistence exists.
+- Added shared bounded repository/profile validation. 13 URL normalization and rejection cases PASS: `npx --yes pnpm@11.2.1 exec vitest run repopilot/input.test.ts` (packages/shared).
+- `node scripts/repopilot-baseline.mjs --repopilot` PASS: navigation, reload, 1280/390 viewport overflow checks, anonymous redirect, plus existing signup/login/bookmark flow.

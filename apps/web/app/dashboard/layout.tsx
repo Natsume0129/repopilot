@@ -16,6 +16,7 @@ import {
   Highlighter,
   Home,
   Search,
+  Sparkles,
   Tag,
 } from "lucide-react";
 
@@ -57,6 +58,11 @@ export default async function Dashboard({
 
   const items = (t: TFunction) =>
     [
+      {
+        name: "RepoPilot / AI 产品创新",
+        icon: <Sparkles size={18} />,
+        path: "/repopilot",
+      },
       {
         name: t("common.home"),
         icon: <Home size={18} />,
