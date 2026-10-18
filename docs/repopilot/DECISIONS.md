@@ -61,3 +61,12 @@
 - `vitest run routers/repopilot.test.ts` in trpc: PASS 3 scenarios including completed persisted mock report and safe missing-live-config failure.
 - `pnpm typecheck --filter=@karakeep/shared-server --filter=@karakeep/trpc --filter=@karakeep/workers`: initially FAIL (Zod mismatch and bookmark enum), fixed; final PASS all 3 packages.
 - Scoped oxlint and oxfmt: PASS after style corrections. Real paid LLM has not been invoked.
+
+## Phase 5
+
+- Connected authenticated form and paginated history to tRPC; async status polling survives refresh, bounded custom skills, actual traces and detailed reports, citations/excerpts, confirmed bookmark creation, persisted feedback/adoption, Markdown clipboard/download, retry/delete and explicit mock/live/partial/error labels.
+- `pnpm typecheck --filter=@karakeep/web`: PASS.
+- `node scripts/repopilot-e2e.mjs`: final PASS signup, research with page refresh, 3 cited opportunities, real supplement trace, bookmark idempotency (one original bookmark), feedback/adoption, clipboard/download, persistent history, second-user denial, deletion and anonymous redirect. Desktop 1280 and mobile 390 report widths do not overflow.
+- Initial E2E failures: Windows clipboard changes LF to CRLF (test now normalizes EOL only); query retries delayed NOT_FOUND display (UI no longer retries authorization/not-found/invalid-input errors, keeps bounded retries for transient failures).
+- Screenshot actually generated at data/repopilot-demo/report.png (ignored local artifact). Scoped oxlint/oxfmt PASS.
+- Baseline crawler detail: actual original bookmark crawl jobs encounter DNS resolution errors in upstream network helper; bookmark creation/persistence and RepoPilot native-fetch GitHub requests work. Search remains unconfigured. These are not claimed as successful crawl/search tests.
