@@ -77,6 +77,7 @@ export async function runResearch(options: {
   client: GitHubClient;
   provider: ModelProvider;
   signal: AbortSignal;
+  maxLlmCalls?: number;
   onState?: (
     state: ResearchState,
     stage: string,
@@ -84,6 +85,11 @@ export async function runResearch(options: {
   ) => Promise<void>;
 }) {
   const { client, provider, signal } = options;
+  const generate: ModelProvider["generate"] = async (task, schema, data) => {
+    if (provider.calls >= Math.min(5, options.maxLlmCalls ?? 5))
+      throw new ResearchError("LLM_BUDGET", "已达到模型请求上限");
+    return provider.generate(task, schema, data);
+  };
   const initial: ResearchState = {
     runId: options.runId,
     repo: normalizeGitHubRepo(options.repository),
@@ -184,6 +190,7 @@ export async function runResearch(options: {
       const r = normalizeGitHubRepo(repo.fullName);
       const metadata = await client.getRepositoryMetadata(r.owner, r.repo);
       s.relatedRepositories.push(metadata);
+      if (options.mode === "mock") metadata.fetchedAt = fixtureRecordedAt;
       add(s, [
         {
           id: `${r.fullName}:tech_repo:metadata`,
@@ -224,6 +231,8 @@ export async function runResearch(options: {
           s.repo.owner,
           s.repo.repo,
         );
+        if (options.mode === "mock")
+          s.repositoryContext.fetchedAt = fixtureRecordedAt;
         const readme = await optional(
           s,
           () => client.getReadme(s.repo.owner, s.repo.repo),
@@ -269,14 +278,14 @@ export async function runResearch(options: {
       "extract_pain_points",
       node("extract_pain_points", async (s) => {
         s.painPointClusters = (
-          await provider.generate("pain_points", painOutputSchema, modelData(s))
+          await generate("pain_points", painOutputSchema, modelData(s))
         ).painPoints;
       }),
     )
     .addNode(
       "discover_ai_technologies",
       node("discover_ai_technologies", async (s) => {
-        s.requestedTools = await provider.generate(
+        s.requestedTools = await generate(
           "technology_plan",
           planSchema,
           modelData(s),
@@ -348,16 +357,12 @@ export async function runResearch(options: {
     .addNode(
       "generate_ideas",
       node("generate_ideas", async (s) => {
-        s.candidateIdeas = await provider.generate(
-          "ideas",
-          draftSchema,
-          modelData(s),
-        );
+        s.candidateIdeas = await generate("ideas", draftSchema, modelData(s));
         if (
           duplicateIdeas(s.candidateIdeas.opportunities) &&
           provider.calls < 5
         )
-          s.candidateIdeas = await provider.generate("ideas", draftSchema, {
+          s.candidateIdeas = await generate("ideas", draftSchema, {
             ...modelData(s),
             instruction:
               "Previous proposals duplicated pain points or flows. Return distinct directions, or fewer opportunities.",
@@ -368,17 +373,26 @@ export async function runResearch(options: {
       "verify_and_score",
       node("verify_and_score", async (s) => {
         const verified = verifyIdeas(s.candidateIdeas, s.evidence, s.profile);
+        s.warnings.push(...verified.warnings);
         const painPoints = s.painPointClusters.map((p) => {
           const evidenceIds = [...new Set(p.evidenceIds)].filter((id) =>
             s.evidence.some((e) => e.id === id && e.sourceType === "issue"),
           );
           return {
             ...p,
+            summary: evidenceIds.length
+              ? p.summary
+              : `待验证假设（无有效 issue 引用）：${p.summary.slice(0, 1600)}`,
             evidenceIds,
             sampleSize: evidenceIds.length,
             confidence:
               evidenceIds.length < 2 ? ("low" as const) : p.confidence,
           };
+        });
+        verified.ideas = verified.ideas.filter((idea) => {
+          if (painPoints.some((p) => p.id === idea.painPointId)) return true;
+          s.warnings.push("已移除无法关联已分析痛点的创意");
+          return false;
         });
         const dates = s.evidence
           .filter((e) => e.sourceType === "issue")

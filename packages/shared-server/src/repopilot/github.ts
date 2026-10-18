@@ -1,15 +1,10 @@
 import { z } from "zod";
+import { readBoundedResponse } from "./transport";
 import { normalizeGitHubRepo } from "@karakeep/shared/repopilot/input";
 import type { Evidence, RepoMetadata } from "@karakeep/shared/repopilot/types";
 
-export class ResearchError extends Error {
-  constructor(
-    public code: string,
-    message: string,
-  ) {
-    super(message);
-  }
-}
+import { ResearchError } from "./errors";
+export { ResearchError } from "./errors";
 const repositorySchema = z.object({
   full_name: z.string(),
   private: z.boolean(),
@@ -155,7 +150,7 @@ export class GitHubClient {
             ? "公开仓库不存在或不可访问"
             : `GitHub 请求失败（${response.status}）`,
         );
-      const body = await response.text();
+      const body = await readBoundedResponse(response, 2_000_000);
       if (body.length > 2_000_000)
         throw new ResearchError("SOURCE_TOO_LARGE", "GitHub 响应超过采集上限");
       let value: unknown;

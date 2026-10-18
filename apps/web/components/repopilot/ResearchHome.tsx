@@ -20,7 +20,9 @@ export default function ResearchHome({ mode }: { mode: "mock" | "live" }) {
   const api = useTRPC(),
     router = useRouter();
   const [error, setError] = useState("");
-  const [cursor, setCursor] = useState<number | undefined>();
+  const [cursor, setCursor] = useState<
+    { createdAt: number; id: string } | undefined
+  >();
   const runs = useQuery(
     api.repopilot.listRuns.queryOptions(
       { limit: 20, cursor },

@@ -70,3 +70,15 @@
 - Initial E2E failures: Windows clipboard changes LF to CRLF (test now normalizes EOL only); query retries delayed NOT_FOUND display (UI no longer retries authorization/not-found/invalid-input errors, keeps bounded retries for transient failures).
 - Screenshot actually generated at data/repopilot-demo/report.png (ignored local artifact). Scoped oxlint/oxfmt PASS.
 - Baseline crawler detail: actual original bookmark crawl jobs encounter DNS resolution errors in upstream network helper; bookmark creation/persistence and RepoPilot native-fetch GitHub requests work. Search remains unconfigured. These are not claimed as successful crawl/search tests.
+
+## Phase 6
+
+- Hardened streaming response size limits, wall-clock timeout even for non-settling providers, mock/live global model call budget, complete-only usage totals, recorded timestamps, unknown pain-point rejection, unsupported factual claims marked hypotheses and URL whitelist in exported report schema.
+- Stable history cursor now includes createdAt + id so tied timestamps cannot drop records.
+- `pnpm test --filter=@karakeep/shared --filter=@karakeep/shared-server --filter=@karakeep/trpc -- --run repopilot`: PASS 29 tests across 5 files (13 input + 11 collector/graph/security + 5 integration).
+- Additional integration checks: hard timeout persisted as failed, bounded crash recovery, stable tied timestamp pagination, evidence/feedback cascading deletion.
+- `pnpm typecheck` with filters shared/db/shared-server/trpc/workers/web: PASS all 6; after final schema/usage hardening the affected shared-server/trpc/web checks also PASS.
+- `pnpm lint` with the same 6 filters: PASS, 0 errors. Web has 23 warnings in unchanged upstream files; no RepoPilot paths in lint warnings.
+- `pnpm format` with those filters: FAIL because untouched checkout files use CRLF (git ls-files --eol confirms index LF / worktree CRLF, e.g. shared/assetdb.ts, db/drizzle.ts, web/server/auth.ts; no diffs in these files). Avoid unrelated mass formatting. Direct oxfmt --check on all 33 added/modified TS/TSX/MJS files: PASS.
+- Mock research never fetches externally. Saving a bookmark deliberately reuses upstream lifecycle and may enqueue normal crawler jobs; for a strictly offline demo start workers with WORKERS_ENABLED_WORKERS=repopilot. This preserves the bookmark business logic instead of silently disabling global crawl protections.
+- Prompt-injection tests verify data separation and fixed tool bounds, not a claim of perfect LLM semantic resistance. Reference existence is mechanically verified; relevance and actual unresolved demand still require human review.

@@ -128,3 +128,71 @@ test<CustomTestContext>("worker persists completed graph, references and safe mi
   expect(failed.status).toBe("failed");
   expect(failed.errorCode).toBe("LLM_NOT_CONFIGURED");
 });
+
+test<CustomTestContext>("hard timeout converges even if provider never settles; recovery exhausts safely", async ({
+  apiCallers: [a],
+  db,
+}) => {
+  const { runId } = await a.repopilot.createRun(input);
+  const { MockProvider } =
+    await import("@karakeep/shared-server/repopilot/provider");
+  const provider = new MockProvider();
+  provider.generate = () =>
+    new Promise(() => {
+      /* simulate a stalled remote request */
+    });
+  await processNextResearch(db, { provider, timeoutMs: 30 });
+  expect((await a.repopilot.getRun({ id: runId })).errorCode).toBe("TIMEOUT");
+  const { runId: retryId } = await a.repopilot.retryRun({ id: runId });
+  await db
+    .update(researchRuns)
+    .set({
+      status: "running",
+      attempts: 3,
+      leaseToken: "stale",
+      leaseExpiresAt: 1,
+    })
+    .where(eq(researchRuns.id, retryId));
+  expect(claimResearchJob(db, 2)).toBeNull();
+  expect((await a.repopilot.getRun({ id: retryId })).errorCode).toBe(
+    "WORKER_INTERRUPTED",
+  );
+});
+
+test<CustomTestContext>("stable pagination at equal timestamps and cascade deletion", async ({
+  apiCallers: [a],
+  db,
+}) => {
+  const first = await a.repopilot.createRun(input);
+  await processNextResearch(db);
+  await a.repopilot.submitFeedback({
+    runId: first.runId,
+    opportunityId: "idea-1",
+    rating: "helpful",
+  });
+  const second = await a.repopilot.createRun(input);
+  await db.update(researchRuns).set({ createdAt: 123456 });
+  const page1 = await a.repopilot.listRuns({ limit: 1 });
+  const page2 = await a.repopilot.listRuns({
+    limit: 1,
+    cursor: page1.nextCursor,
+  });
+  expect(new Set([...page1.items, ...page2.items].map((x) => x.id))).toEqual(
+    new Set([first.runId, second.runId]),
+  );
+  await a.repopilot.deleteRun({ id: first.runId });
+  const { researchEvidence, researchFeedback } =
+    await import("@karakeep/db/schema");
+  expect(
+    await db
+      .select()
+      .from(researchEvidence)
+      .where(eq(researchEvidence.runId, first.runId)),
+  ).toHaveLength(0);
+  expect(
+    await db
+      .select()
+      .from(researchFeedback)
+      .where(eq(researchFeedback.runId, first.runId)),
+  ).toHaveLength(0);
+});

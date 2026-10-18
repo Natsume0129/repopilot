@@ -31,7 +31,13 @@ export async function processNextResearch(
   const job = claimResearchJob(db, Date.now(), timeoutMs + 15000);
   if (!job) return false;
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  let timer: ReturnType<typeof setTimeout>;
+  const timeout = new Promise<never>((_resolve, reject) => {
+    timer = setTimeout(() => {
+      controller.abort();
+      reject(new ResearchError("TIMEOUT", "研究超过执行时限，请重试"));
+    }, timeoutMs);
+  });
   const provider =
     options.provider ??
     (job.mode === "mock"
@@ -49,34 +55,38 @@ export async function processNextResearch(
   });
   let latest: ResearchState | undefined;
   try {
-    const state = await runResearch({
-      runId: job.id,
-      repository: job.repoFullName,
-      profile: JSON.parse(job.userProfileJson),
-      mode: job.mode,
-      client,
-      provider,
-      signal: controller.signal,
-      onState: async (s, stage, progress) => {
-        latest = s;
-        const updated = await db
-          .update(researchRuns)
-          .set({
-            stage,
-            progress,
-            traceJson: JSON.stringify(s.trace),
-            updatedAt: Date.now(),
-          })
-          .where(leaseFilter(job.id, job.leaseToken!));
-        if (updated.changes === 0) {
-          controller.abort();
-          throw new ResearchError(
-            "LEASE_LOST",
-            "任务已删除或被其他 worker 接管",
-          );
-        }
-      },
-    });
+    const state = await Promise.race([
+      runResearch({
+        runId: job.id,
+        repository: job.repoFullName,
+        profile: JSON.parse(job.userProfileJson),
+        mode: job.mode,
+        client,
+        provider,
+        signal: controller.signal,
+        maxLlmCalls: budget(process.env.REPOPILOT_MAX_LLM_CALLS, 5, 5),
+        onState: async (s, stage, progress) => {
+          latest = s;
+          const updated = await db
+            .update(researchRuns)
+            .set({
+              stage,
+              progress,
+              traceJson: JSON.stringify(s.trace),
+              updatedAt: Date.now(),
+            })
+            .where(leaseFilter(job.id, job.leaseToken!));
+          if (updated.changes === 0) {
+            controller.abort();
+            throw new ResearchError(
+              "LEASE_LOST",
+              "任务已删除或被其他 worker 接管",
+            );
+          }
+        },
+      }),
+      timeout,
+    ]);
     if (controller.signal.aborted)
       throw new ResearchError("TIMEOUT", "研究已超时，请重试");
     const report = state.finalReport!;
@@ -164,7 +174,7 @@ export async function processNextResearch(
           .run();
     });
   } finally {
-    clearTimeout(timer);
+    clearTimeout(timer!);
   }
   return true;
 }

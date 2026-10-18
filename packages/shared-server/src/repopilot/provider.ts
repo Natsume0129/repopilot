@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { readBoundedResponse } from "./transport";
 import type { Evidence } from "@karakeep/shared/repopilot/types";
 import { ResearchError } from "./github";
 
@@ -16,8 +17,19 @@ export interface ModelProvider {
 
 export class LiveProvider implements ModelProvider {
   calls = 0;
-  inputTokens: number | null = null;
-  outputTokens: number | null = null;
+  private usageResponses = 0;
+  private inputTotal = 0;
+  private outputTotal = 0;
+  get inputTokens() {
+    return this.calls > 0 && this.usageResponses === this.calls
+      ? this.inputTotal
+      : null;
+  }
+  get outputTokens() {
+    return this.calls > 0 && this.usageResponses === this.calls
+      ? this.outputTotal
+      : null;
+  }
   modelName = process.env.REPOPILOT_LLM_MODEL ?? "";
   private inputBytes = 0;
   constructor(
@@ -83,7 +95,7 @@ export class LiveProvider implements ModelProvider {
           "LLM_HTTP",
           `模型服务请求失败（${response.status}），请检查配置或配额`,
         );
-      const raw = await response.text();
+      const raw = await readBoundedResponse(response, 200000);
       if (raw.length > 200000)
         throw new ResearchError("LLM_SCHEMA", "模型响应过长");
       try {
@@ -101,10 +113,9 @@ export class LiveProvider implements ModelProvider {
           })
           .parse(JSON.parse(raw));
         if (result.usage) {
-          this.inputTokens =
-            (this.inputTokens ?? 0) + result.usage.prompt_tokens;
-          this.outputTokens =
-            (this.outputTokens ?? 0) + result.usage.completion_tokens;
+          this.usageResponses++;
+          this.inputTotal += result.usage.prompt_tokens;
+          this.outputTotal += result.usage.completion_tokens;
         }
         return schema.parse(JSON.parse(result.choices[0].message.content));
       } catch {

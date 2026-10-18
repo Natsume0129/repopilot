@@ -2,6 +2,21 @@ import { z } from "zod";
 const text = z.string().min(1).max(1800);
 const list = z.array(text).max(12);
 const ids = z.array(z.string().max(200)).max(20);
+const sourceUrl = z
+  .string()
+  .url()
+  .refine((value) => {
+    const url = new URL(value);
+    return (
+      url.protocol === "https:" &&
+      url.hostname === "github.com" &&
+      !url.username &&
+      !url.password &&
+      !url.port &&
+      !url.search &&
+      !url.hash
+    );
+  }, "Only collected official GitHub sources are supported");
 export const confidenceSchema = z.enum(["high", "medium", "low"]);
 export const painSchema = z.object({
   id: z.string().max(80),
@@ -66,7 +81,7 @@ export const reportSchema = z.object({
   fixtureRecordedAt: z.string().optional(),
   repository: z.object({
     fullName: z.string(),
-    url: z.string().url(),
+    url: sourceUrl,
     description: z.string(),
     stars: z.number(),
     language: z.string(),
@@ -93,7 +108,7 @@ export const reportSchema = z.object({
         evidenceId: z.string(),
         type: z.string(),
         title: z.string(),
-        url: z.string().url(),
+        url: sourceUrl,
         fetchedAt: z.string(),
         excerpt: z.string().max(20000),
         state: z.string().optional(),

@@ -1,5 +1,5 @@
 import { TRPCError } from "@trpc/server";
-import { and, desc, eq, inArray, lt } from "drizzle-orm";
+import { and, desc, eq, inArray, lt, or } from "drizzle-orm";
 import { z } from "zod";
 import {
   researchRuns,
@@ -78,7 +78,9 @@ export const repopilotRouter = router({
     .input(
       z.object({
         limit: z.number().int().min(1).max(50).default(20),
-        cursor: z.number().int().optional(),
+        cursor: z
+          .object({ createdAt: z.number().int(), id: z.uuid() })
+          .optional(),
       }),
     )
     .query(async ({ ctx, input }) => {
@@ -96,16 +98,27 @@ export const repopilotRouter = router({
         .where(
           and(
             eq(researchRuns.userId, ctx.user.id),
-            input.cursor ? lt(researchRuns.createdAt, input.cursor) : undefined,
+            input.cursor
+              ? or(
+                  lt(researchRuns.createdAt, input.cursor.createdAt),
+                  and(
+                    eq(researchRuns.createdAt, input.cursor.createdAt),
+                    lt(researchRuns.id, input.cursor.id),
+                  ),
+                )
+              : undefined,
           ),
         )
-        .orderBy(desc(researchRuns.createdAt))
+        .orderBy(desc(researchRuns.createdAt), desc(researchRuns.id))
         .limit(input.limit + 1);
       const hasMore = items.length > input.limit;
       if (hasMore) items.pop();
       return {
         items,
-        nextCursor: hasMore ? items.at(-1)?.createdAt : undefined,
+        nextCursor:
+          hasMore && items.length
+            ? { createdAt: items.at(-1)!.createdAt, id: items.at(-1)!.id }
+            : undefined,
       };
     }),
   getRun: sessionProcedure.input(idInput).query(async ({ ctx, input }) => {
