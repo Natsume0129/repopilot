@@ -40,3 +40,12 @@
 - Bookmark integration calls the actual existing bookmarks router, preserving its validation and side effects.
 - `npx --yes pnpm@11.2.1 db:generate --name repopilot_research`, then `db:migrate`: PASS.
 - `npx --yes pnpm@11.2.1 exec vitest run routers/repopilot.test.ts` (packages/trpc): PASS 2 integration scenarios, including fresh migrated test databases, all owner checks, creation/list/deletion, dedup, lease recovery/fencing, retry, bookmark reuse and feedback validation.
+
+## Phase 3
+
+- Fixed-host GitHub REST client: public-repository gate, redirects rejected, bounded requests/time, per-run cache, issue pagination/dedup/PR exclusion, README base64 decoding, limited releases and directory summaries, optional README handling and readable failures.
+- Rate limits respect Retry-After/reset within deadline and bounded retries. Reference URLs are validated and issue links assembled only from fetched issue numbers.
+- Consulted GitHub official Issues and REST rate-limit documentation on 2026-10-19.
+- `node scripts/repopilot-record-fixture.mjs`: PASS, actually recorded 8 public endpoints from Dify and LangGraph, 5 non-PR issues; only allowlisted fields, no authors/credentials. Fixtures preserve recordedAt; explicit mock adapter never falls back to network.
+- Direct unauthenticated GitHub metadata smoke for langgenius/dify: HTTP 200. LLM/live end-to-end still unverified.
+- `npx --yes pnpm@11.2.1 exec vitest run src/repopilot/github.test.ts` (packages/shared-server): PASS 4 scenarios covering cache, no-network mock, pagination, dedup, PR exclusion, empty issues, missing README, private rejection, redirect handling, rate limit, budget and timeout.

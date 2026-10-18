@@ -1,0 +1,589 @@
+{
+  "recordedAt": "2026-10-18T15:20:12.742Z",
+  "responses": {
+    "/repos/langgenius/dify": {
+      "id": 626805178,
+      "name": "dify",
+      "full_name": "langgenius/dify",
+      "private": false,
+      "html_url": "https://github.com/langgenius/dify",
+      "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "updated_at": "2026-10-18T15:13:26Z",
+      "size": 622172,
+      "stargazers_count": 158781,
+      "language": "Python",
+      "archived": false,
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "automation",
+        "claude",
+        "deepseek",
+        "genai",
+        "gpt",
+        "llm",
+        "low-code",
+        "mcp",
+        "nextjs",
+        "no-code",
+        "openai",
+        "python",
+        "skills",
+        "workflow"
+      ]
+    },
+    "/repos/langgenius/dify/readme": {
+      "name": "README.md",
+      "size": 12132,
+      "html_url": "https://github.com/langgenius/dify/blob/main/README.md",
+      "type": "file",
+      "content": "IVtjb3Zlci12NS1vcHRpbWl6ZWRdKC4vaW1hZ2VzL0dpdEh1Yl9SRUFETUVfaWYucG5nKQoKPHAgYWxpZ249ImNlbnRlciI+CiAgPGEgaHJlZj0iaHR0cHM6Ly9jbG91ZC5kaWZ5LmFpIj5EaWZ5IENsb3VkPC9hPiDCtwogIDxhIGhyZWY9Imh0dHBzOi8vZG9jcy5kaWZ5LmFpL2dldHRpbmctc3RhcnRlZC9pbnN0YWxsLXNlbGYtaG9zdGVkIj5TZWxmLWhvc3Rpbmc8L2E+IMK3CiAgPGEgaHJlZj0iaHR0cHM6Ly9kb2NzLmRpZnkuYWkiPkRvY3VtZW50YXRpb248L2E+IMK3CiAgPGEgaHJlZj0iaHR0cHM6Ly9kaWZ5LmFpL3ByaWNpbmciPkRpZnkgZWRpdGlvbiBvdmVydmlldzwvYT4KPC9wPgoKPHAgYWxpZ249ImNlbnRlciI+CiAgICA8YSBocmVmPSJodHRwczovL2RpZnkuYWkiIHRhcmdldD0iX2JsYW5rIj4KICAgICAgICA8aW1nIGFsdD0iU3RhdGljIEJhZGdlIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvUHJvZHVjdC1GMDQ0MzgiPjwvYT4KICAgIDxhIGhyZWY9Imh0dHBzOi8vZGlmeS5haS9wcmljaW5nIiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgPGltZyBhbHQ9IlN0YXRpYyBCYWRnZSIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL2ZyZWUtcHJpY2luZz9sb2dvPWZyZWUmY29sb3I9JTIwJTIzMTU1RUVGJmxhYmVsPXByaWNpbmcmbGFiZWxDb2xvcj0lMjAlMjM1MjhiZmYiPjwvYT4KICAgIDxhIGhyZWY9Imh0dHBzOi8vZGlzY29yZC5nZy9GbmdOSHBiY1k3IiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vZGlzY29yZC8xMDgyNDg2NjU3Njc4MzExNDU0P2xvZ289ZGlzY29yZCZsYWJlbENvbG9yPSUyMCUyMzU0NjJlYiZsb2dvQ29sb3I9JTIwJTIzZjVmNWY1JmNvbG9yPSUyMCUyMzU0NjJlYiIKICAgICAgICAgICAgYWx0PSJjaGF0IG9uIERpc2NvcmQiPjwvYT4KICAgIDxhIGhyZWY9Imh0dHBzOi8vcmVkZGl0LmNvbS9yL2RpZnlhaSIgdGFyZ2V0PSJfYmxhbmsiPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL3JlZGRpdC9zdWJyZWRkaXQtc3Vic2NyaWJlcnMvZGlmeWFpP3N0eWxlPXBsYXN0aWMmbG9nbz1yZWRkaXQmbGFiZWw9ciUyRmRpZnlhaSZsYWJlbENvbG9yPXdoaXRlIgogICAgICAgICAgICBhbHQ9ImpvaW4gUmVkZGl0Ij48L2E+CiAgICA8YSBocmVmPSJodHRwczovL3R3aXR0ZXIuY29tL2ludGVudC9mb2xsb3c/c2NyZWVuX25hbWU9ZGlmeV9haSIgdGFyZ2V0PSJfYmxhbmsiPgogICAgICAgIDxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL3R3aXR0ZXIvZm9sbG93L2RpZnlfYWk/bG9nbz1YJmNvbG9yPSUyMCUyM2Y1ZjVmNSIKICAgICAgICAgICAgYWx0PSJmb2xsb3cgb24gWChUd2l0dGVyKSI+PC9hPgogICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbGFuZ2dlbml1cy8iIHRhcmdldD0iX2JsYW5rIj4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9jdXN0b20taWNvbi1iYWRnZXMuZGVtb2xhYi5jb20vYmFkZ2UvTGlua2VkSW4tMEE2NkMyP2xvZ289bGlua2VkaW4td2hpdGUmbG9nb0NvbG9yPWZmZiIKICAgICAgICAgICAgYWx0PSJmb2xsb3cgb24gTGlua2VkSW4iPjwvYT4KICAgIDxhIGhyZWY9Imh0dHBzOi8vaHViLmRvY2tlci5jb20vdS9sYW5nZ2VuaXVzIiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgPGltZyBhbHQ9IkRvY2tlciBQdWxscyIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2RvY2tlci9wdWxscy9sYW5nZ2VuaXVzL2RpZnktd2ViP2xhYmVsQ29sb3I9JTIwJTIzRkRCMDYyJmNvbG9yPSUyMCUyM2Y3OTAwOSI+PC9hPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2xhbmdnZW5pdXMvZGlmeS9ncmFwaHMvY29tbWl0LWFjdGl2aXR5IiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgPGltZyBhbHQ9IkNvbW1pdHMgbGFzdCBtb250aCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2dpdGh1Yi9jb21taXQtYWN0aXZpdHkvbS9sYW5nZ2VuaXVzL2RpZnk/bGFiZWxDb2xvcj0lMjAlMjMzMmI1ODMmY29sb3I9JTIwJTIzMTJiNzZhIj48L2E+CiAgICA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vbGFuZ2dlbml1cy9kaWZ5LyIgdGFyZ2V0PSJfYmxhbmsiPgogICAgICAgIDxpbWcgYWx0PSJJc3N1ZXMgY2xvc2VkIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vZ2l0aHViL2lzc3Vlcy1zZWFyY2g/cXVlcnk9cmVwbyUzQWxhbmdnZW5pdXMlMkZkaWZ5JTIwaXMlM0FjbG9zZWQmbGFiZWw9aXNzdWVzJTIwY2xvc2VkJmxhYmVsQ29sb3I9JTIwJTIzN2Q4OWIwJmNvbG9yPSUyMCUyMzVkNmI5OCI+PC9hPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL2xhbmdnZW5pdXMvZGlmeS9kaXNjdXNzaW9ucy8iIHRhcmdldD0iX2JsYW5rIj4KICAgICAgICA8aW1nIGFsdD0iRGlzY3Vzc2lvbiBwb3N0cyIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2dpdGh1Yi9kaXNjdXNzaW9ucy9sYW5nZ2VuaXVzL2RpZnk/bGFiZWxDb2xvcj0lMjAlMjM5YjhhZmImY29sb3I9JTIwJTIzN2E1YWY4Ij48L2E+CiAgICA8YSBocmVmPSJodHRwczovL2luc2lnaHRzLmxpbnV4Zm91bmRhdGlvbi5vcmcvcHJvamVjdC9sYW5nZ2VuaXVzLWRpZnkiIHRhcmdldD0iX2JsYW5rIj4KICAgICAgICA8aW1nIGFsdD0iTEZYIEhlYWx0aCBTY29yZSIgc3JjPSJodHRwczovL2luc2lnaHRzLmxpbnV4Zm91bmRhdGlvbi5vcmcvYXBpL2JhZGdlL2hlYWx0aC1zY29yZT9wcm9qZWN0PWxhbmdnZW5pdXMtZGlmeSI+PC9hPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9pbnNpZ2h0cy5saW51eGZvdW5kYXRpb24ub3JnL3Byb2plY3QvbGFuZ2dlbml1cy1kaWZ5IiB0YXJnZXQ9Il9ibGFuayI+CiAgICAgICAgPGltZyBhbHQ9IkxGWCBDb250cmlidXRvcnMiIHNyYz0iaHR0cHM6Ly9pbnNpZ2h0cy5saW51eGZvdW5kYXRpb24ub3JnL2FwaS9iYWRnZS9jb250cmlidXRvcnM/cHJvamVjdD1sYW5nZ2VuaXVzLWRpZnkiPjwvYT4KICAgIDxhIGhyZWY9Imh0dHBzOi8vaW5zaWdodHMubGludXhmb3VuZGF0aW9uLm9yZy9wcm9qZWN0L2xhbmdnZW5pdXMtZGlmeSIgdGFyZ2V0PSJfYmxhbmsiPgogICAgICAgIDxpbWcgYWx0PSJMRlggQWN0aXZlIENvbnRyaWJ1dG9ycyIgc3JjPSJodHRwczovL2luc2lnaHRzLmxpbnV4Zm91bmRhdGlvbi5vcmcvYXBpL2JhZGdlL2FjdGl2ZS1jb250cmlidXRvcnM/cHJvamVjdD1sYW5nZ2VuaXVzLWRpZnkiPjwvYT4KPC9wPgoKPHAgYWxpZ249ImNlbnRlciI+CiAgPGEgaHJlZj0iLi9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgaW4gRW5nbGlzaCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0VuZ2xpc2gtZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL3poLVRXL1JFQURNRS5tZCI+PGltZyBhbHQ9Iue5gemrlOS4reaWh+aWh+S7tiIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL+e5gemrlOS4reaWhy1kOWQ5ZDkiPjwvYT4KICA8YSBocmVmPSIuL2RvY3MvemgtQ04vUkVBRE1FLm1kIj48aW1nIGFsdD0i566A5L2T5Lit5paH5paH5Lu2IiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv566A5L2T5Lit5paHLWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy9qYS1KUC9SRUFETUUubWQiPjxpbWcgYWx0PSLml6XmnKzoqp7jga5SRUFETUUiIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS/ml6XmnKzoqp4tZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL2VzLUVTL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSBlbiBFc3Bhw7FvbCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0VzcGHDsW9sLWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy9mci1GUi9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgZW4gRnJhbsOnYWlzIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvRnJhbsOnYWlzLWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy90bGgvUkVBRE1FLm1kIj48aW1nIGFsdD0iUkVBRE1FIHRsaEluZ2FuIEhvbCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0tsaW5nb24tZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL2tvLUtSL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSBpbiBLb3JlYW4iIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS/tlZzqta3slrQtZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL2FyLVNBL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSDYqNin2YTYudix2KjZitipIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv2KfZhNi52LHYqNmK2KktZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL3RyLVRSL1JFQURNRS5tZCI+PGltZyBhbHQ9IlTDvHJrw6dlIFJFQURNRSIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1TDvHJrw6dlLWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy92aS1WTi9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgVGnhur9uZyBWaeG7h3QiIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9UaSVFMSVCQSVCRm5nJTIwVmklRTElQkIlODd0LWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy9kZS1ERS9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgaW4gRGV1dHNjaCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0dlcm1hbi1kOWQ5ZDkiPjwvYT4KICA8YSBocmVmPSIuL2RvY3MvaXQtSVQvUkVBRE1FLm1kIj48aW1nIGFsdD0iUkVBRE1FIGluIEl0YWxpYW5vIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvSXRhbGlhbm8tZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL3B0LUJSL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSBlbSBQb3J0dWd1w6pzIGRvIEJyYXNpbCIgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1BvcnR1Z3UlQzMlQUFzJTIwZG8lMjBCcmFzaWwtZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL3NsLVNJL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSBTbG92ZW7FocSNaW5hIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvU2xvdmVuJUM1JUExJUM0JThEaW5hLWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy9ibi1CRC9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgaW4g4Kas4Ka+4KaC4Kay4Ka+IiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2Uv4Kas4Ka+4KaC4Kay4Ka+LWQ5ZDlkOSI+PC9hPgogIDxhIGhyZWY9Ii4vZG9jcy9oaS1JTi9SRUFETUUubWQiPjxpbWcgYWx0PSJSRUFETUUgaW4g4KS54KS/4KSo4KWN4KSm4KWAIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvSGluZGktZDlkOWQ5Ij48L2E+CiAgPGEgaHJlZj0iLi9kb2NzL2lkLUlEL1JFQURNRS5tZCI+PGltZyBhbHQ9IlJFQURNRSBkYWxhbSBCYWhhc2EgSW5kb25lc2lhIiBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvQmFoYXNhJTIwSW5kb25lc2lhLWQ5ZDlkOSI+PC9hPgo8L3A+CgpEaWZ5IGlzIGFuIG9wZW4tc291cmNlIExMTSBhcHAgZGV2ZWxvcG1lbnQgcGxhdGZvcm0uIEl0cyBpbnR1aXRpdmUgaW50ZXJmYWNlIGNvbWJpbmVzIEFJIHdvcmtmbG93LCBSQUcgcGlwZWxpbmUsIGFnZW50IGNhcGFiaWxpdGllcywgbW9kZWwgbWFuYWdlbWVudCwgb2JzZXJ2YWJpbGl0eSBmZWF0dXJlcyAoaW5jbHVkaW5nIFtPcGlrXShodHRwczovL3d3dy5jb21ldC5jb20vZG9jcy9vcGlrL2ludGVncmF0aW9ucy9kaWZ5KSwgW0xhbmdmdXNlXShodHRwczovL2RvY3MubGFuZ2Z1c2UuY29tKSwgYW5kIFtBcml6ZSBQaG9lbml4XShodHRwczovL2RvY3MuYXJpemUuY29tL3Bob2VuaXgpKSBhbmQgbW9yZSwgbGV0dGluZyB5b3UgcXVpY2tseSBnbyBmcm9tIHByb3RvdHlwZSB0byBwcm9kdWN0aW9uLiBIZXJlJ3MgYSBsaXN0IG9mIHRoZSBjb3JlIGZlYXR1cmVzOgoKIyMgUXVpY2sgc3RhcnQKCj4gQmVmb3JlIGluc3RhbGxpbmcgRGlmeSwgbWFrZSBzdXJlIHlvdXIgbWFjaGluZSBtZWV0cyB0aGUgZm9sbG93aW5nIG1pbmltdW0gc3lzdGVtIHJlcXVpcmVtZW50czoKPgo+IC0gQ1BVID49IDIgQ29yZQo+IC0gUkFNID49IDQgR2lCCgo8YnIvPgoKVGhlIGVhc2llc3Qgd2F5IHRvIHN0YXJ0IHRoZSBEaWZ5IHNlcnZlciBpcyB0aHJvdWdoIFtEb2NrZXIgQ29tcG9zZV0oZG9ja2VyL2RvY2tlci1jb21wb3NlLnlhbWwpLiBCZWZvcmUgcnVubmluZyBEaWZ5IHdpdGggdGhlIGZvbGxvd2luZyBjb21tYW5kcywgbWFrZSBzdXJlIHRoYXQgW0RvY2tlcl0oaHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZ2V0LWRvY2tlci8pIGFuZCBEb2NrZXIgQ29tcG9zZSB2Mi4yNC4wIG9yIGxhdGVyIGFyZSBpbnN0YWxsZWQgb24geW91ciBtYWNoaW5lOgoKYGBgYmFzaApjZCBkaWZ5CmNkIGRvY2tlcgpjcCAuZW52LmV4YW1wbGUgLmVudgpkb2NrZXIgY29tcG9zZSB1cCAtZApgYGAKCkFmdGVyIHJ1bm5pbmcsIHlvdSBjYW4gYWNjZXNzIHRoZSBEaWZ5IGRhc2hib2FyZCBpbiB5b3VyIGJyb3dzZXIgYXQgW2h0dHA6Ly9sb2NhbGhvc3QvaW5zdGFsbF0oaHR0cDovL2xvY2FsaG9zdC9pbnN0YWxsKSBhbmQgc3RhcnQgdGhlIGluaXRpYWxpemF0aW9uIHByb2Nlc3MuCgojIyMgU2Vla2luZyBoZWxwCgpQbGVhc2UgcmVmZXIgdG8gb3VyIFtGQVFdKGh0dHBzOi8vZG9jcy5kaWZ5LmFpL2dldHRpbmctc3RhcnRlZC9pbnN0YWxsLXNlbGYtaG9zdGVkL2ZhcXMpIGlmIHlvdSBlbmNvdW50ZXIgcHJvYmxlbXMgc2V0dGluZyB1cCBEaWZ5LiBSZWFjaCBvdXQgdG8gW3RoZSBjb21tdW5pdHkgYW5kIHVzXSgjY29tbXVuaXR5LS1jb250YWN0KSBpZiB5b3UgYXJlIHN0aWxsIGhhdmluZyBpc3N1ZXMuCgo+IElmIHlvdSdkIGxpa2UgdG8gY29udHJpYnV0ZSB0byBEaWZ5IG9yIGRvIGFkZGl0aW9uYWwgZGV2ZWxvcG1lbnQsIHJlZmVyIHRvIG91ciBbZ3VpZGUgdG8gZGVwbG95aW5nIGZyb20gc291cmNlIGNvZGVdKGh0dHBzOi8vZG9jcy5kaWZ5LmFpL2dldHRpbmctc3RhcnRlZC9pbnN0YWxsLXNlbGYtaG9zdGVkL2xvY2FsLXNvdXJjZS1jb2RlKQoKIyMgS2V5IGZlYXR1cmVzCgoqKjEuIFdvcmtmbG93Kio6CkJ1aWxkIGFuZCB0ZXN0IHBvd2VyZnVsIEFJIHdvcmtmbG93cyBvbiBhIHZpc3VhbCBjYW52YXMsIGxldmVyYWdpbmcgYWxsIHRoZSBmb2xsb3dpbmcgZmVhdHVyZXMgYW5kIGJleW9uZC4KCioqMi4gQ29tcHJlaGVuc2l2ZSBtb2RlbCBzdXBwb3J0Kio6ClNlYW1sZXNzIGludGVncmF0aW9uIHdpdGggaHVuZHJlZHMgb2YgcHJvcHJpZXRhcnkgLyBvcGVuLXNvdXJjZSBMTE1zIGZyb20gZG96ZW5zIG9mIGluZmVyZW5jZSBwcm92aWRlcnMgYW5kIHNlbGYtaG9zdGVkIHNvbHV0aW9ucywgY292ZXJpbmcgR1BULCBNaXN0cmFsLCBMbGFtYTMsIGFuZCBhbnkgT3BlbkFJIEFQSS1jb21wYXRpYmxlIG1vZGVscy4gQSBmdWxsIGxpc3Qgb2Ygc3VwcG9ydGVkIG1vZGVsIHByb3ZpZGVycyBjYW4gYmUgZm91bmQgW2hlcmVdKGh0dHBzOi8vZG9jcy5kaWZ5LmFpL2dldHRpbmctc3RhcnRlZC9yZWFkbWUvbW9kZWwtcHJvdmlkZXJzKS4KCiFbcHJvdmlkZXJzLXY1XShodHRwczovL2dpdGh1Yi5jb20vbGFuZ2dlbml1cy9kaWZ5L2Fzc2V0cy8xMzIzMDkxNC81YTE3YmRiZS0wOTdhLTQxMDAtODM2My00MDI1NWI3MGY2ZTMpCgoqKjMuIFByb21wdCBJREUqKjoKSW50dWl0aXZlIGludGVyZmFjZSBmb3IgY3JhZnRpbmcgcHJvbXB0cywgY29tcGFyaW5nIG1vZGVsIHBlcmZvcm1hbmNlLCBhbmQgYWRkaW5nIGFkZGl0aW9uYWwgZmVhdHVyZXMgc3VjaCBhcyB0ZXh0LXRvLXNwZWVjaCB0byBhIGNoYXQtYmFzZWQgYXBwLgoKKio0LiBSQUcgUGlwZWxpbmUqKjoKRXh0ZW5zaXZlIFJBRyBjYXBhYmlsaXRpZXMgdGhhdCBjb3ZlciBldmVyeXRoaW5nIGZyb20gZG9jdW1lbnQgaW5nZXN0aW9uIHRvIHJldHJpZXZhbCwgd2l0aCBvdXQtb2YtYm94IHN1cHBvcnQgZm9yIHRleHQgZXh0cmFjdGlvbiBmcm9tIFBERnMsIFBQVHMsIGFuZCBvdGhlciBjb21tb24gZG9jdW1lbnQgZm9ybWF0cy4KCioqNS4gQWdlbnQqKjogQXV0b25vbW91cyBhZ2VudHMgd2l0aCBhIHNhbmRib3ggb2YgdGhlaXIgb3duOiB0aGV5IHJ1biBjb21tYW5kcywgaW5zdGFsbCBzb2Z0d2FyZSwgYW5kIGhhbmRsZSBmaWxlcyB0byBnZXQgb3Blbi1lbmRlZCB0YXNrcyBkb25lLiBEZXNjcmliZSB0aGUgYWdlbnQgeW91IHdhbnQgYW5kIGl0IGJ1aWxkcyBpdHNlbGYuIEdpdmUgaXQgc2tpbGxzLCBjb25uZWN0IHRvb2xzIGZyb20gW0RpZnkgTWFya2V0cGxhY2VdKGh0dHBzOi8vbWFya2V0cGxhY2UuZGlmeS5haS8/Y2F0ZWdvcnk9dG9vbCksIE1DUCBzZXJ2ZXJzLCBvciB5b3VyIG93biBBUElzLCBhbmQgcHV0IGl0IHRvIHdvcmsgYXMgYSBjaGF0IGFwcCBvciBhcyBhIHN0ZXAgaW4gYW55IHdvcmtmbG93LgoKKio2LiBMTE1PcHMqKjoKTW9uaXRvciBhbmQgYW5hbHl6ZSBhcHBsaWNhdGlvbiBsb2dzIGFuZCBwZXJmb3JtYW5jZSBvdmVyIHRpbWUuIFlvdSBjb3VsZCBjb250aW51b3VzbHkgaW1wcm92ZSBwcm9tcHRzLCBkYXRhc2V0cywgYW5kIG1vZGVscyBiYXNlZCBvbiBwcm9kdWN0aW9uIGRhdGEgYW5kIGFubm90YXRpb25zLgoKKio3LiBCYWNrZW5kLWFzLWEtU2VydmljZSoqOgpBbGwgb2YgRGlmeSdzIG9mZmVyaW5ncyBjb21lIHdpdGggY29ycmVzcG9uZGluZyBBUElzLCBzbyB5b3UgY291bGQgZWZmb3J0bGVzc2x5IGludGVncmF0ZSBEaWZ5IGludG8geW91ciBvd24gYnVzaW5lc3MgbG9naWMuCgojIyBVc2luZyBEaWZ5CgotICoqQ2xvdWQgPGJyLz4qKgogIFdlIGhvc3QgW0RpZnkgQ2xvdWRdKGh0dHBzOi8vY2xvdWQuZGlmeS5haSkgc28geW91IGNhbiB0cnkgRGlmeSB3aXRob3V0IG1hbmFnaW5nIGEgc2VydmVyLiBTZWUgdGhlIFtwcmljaW5nIHBhZ2VdKGh0dHBzOi8vZGlmeS5haS9wcmljaW5nKSBmb3IgY3VycmVudCBwbGFucyBhbmQgdXNhZ2UgYWxsb3dhbmNlcy4gSWYgeW91IHJ1biBpbnRvIGlzc3VlcywgW2NvbnRhY3Qgb3VyIENsb3VkIHN1cHBvcnQgdGVhbV0obWFpbHRvOmNsb3VkQGRpZnkuYWk/c3ViamVjdD0lNUJHaXRIdWIlNUREaWZ5JTIwQ2xvdWQlMjBTdXBwb3J0KS4KCi0gKipTZWxmLWhvc3RpbmcgRGlmeSBDb21tdW5pdHkgRWRpdGlvbjxici8+KioKICBRdWlja2x5IGdldCBEaWZ5IHJ1bm5pbmcgaW4geW91ciBlbnZpcm9ubWVudCB3aXRoIHRoaXMgW3N0YXJ0ZXIgZ3VpZGVdKCNxdWljay1zdGFydCkuCiAgVXNlIG91ciBbZG9jdW1lbnRhdGlvbl0oaHR0cHM6Ly9kb2NzLmRpZnkuYWkpIGZvciBmdXJ0aGVyIHJlZmVyZW5jZXMgYW5kIG1vcmUgaW4tZGVwdGggaW5zdHJ1Y3Rpb25zLgoKLSAqKltEaWZ5IEVudGVycHJpc2VdKGh0dHBzOi8vZGlmeS5haS9kaWZ5LWVudGVycHJpc2UpPGJyLz4qKgogIEZvciBvcmdhbml6YXRpb25zIHJlcXVpcmluZyBzZWxmLWhvc3RpbmcsIFNTTywgUkJBQyBTZWN1cml0eSBhbmQgRW50ZXJwcmlzZSBTdXBwb3J0IFNMQXMsIHBsZWFzZSBmaWxsIG91dCBbdGhpcyBmb3JtXShodHRwczovL3NoYXJlLW5hMi5oc2Zvcm1zLmNvbS8xNC0wOWZmNUhTOTJTaDRtM2Y0eXJjdzQwczlmaykgdG8gc3BlYWsgdG8gYSBzb2x1dGlvbiByZXByZXNlbnRhdGl2ZS4gPGJyLz4KCiMjIFN0YXlpbmcgYWhlYWQKClN0YXIgRGlmeSBvbiBHaXRIdWIgYW5kIGJlIGluc3RhbnRseSBub3RpZmllZCBvZiBuZXcgcmVsZWFzZXMuCgo8aW1nIHdpZHRoPSIxMzQ0IiBoZWlnaHQ9IjcyMCIgYWx0PSJzdGFyIiBzcmM9Imh0dHBzOi8vZ2l0aHViLmNvbS91c2VyLWF0dGFjaG1lbnRzL2Fzc2V0cy9kY2QwODZkMS1hZjBmLTQ3MWItYWU1Mi0xYWQyZmEwNDA1OTUiIC8+CgojIyBBZHZhbmNlZCBTZXR1cAoKRm9yIGN1c3RvbSBjb25maWd1cmF0aW9uLCBvYnNlcnZhYmlsaXR5LCBhbmQgZGVwbG95bWVudCBvcHRpb25zLCBzZWUgW0FkdmFuY2VkIFNldHVwXShkb2NzL0FEVkFOQ0VEX1NFVFVQLm1kKS4KCiMjIENvbnRyaWJ1dGluZwoKRGlmeSB3ZWxjb21lcyBjb250cmlidXRpb25zIG9mIGFsbCBraW5kczoKCi0gKipDb2RlKio6IFJlYWQgdGhlIFtDb250cmlidXRpb24gR3VpZGVdKENPTlRSSUJVVElORy5tZCksIHRoZW4gYnJvd3NlIFtnb29kIGZpcnN0IGlzc3Vlc10oaHR0cHM6Ly9naXRodWIuY29tL2xhbmdnZW5pdXMvZGlmeS9pc3N1ZXM/cT1pcyUzQWlzc3VlJTIwc3RhdGUlM0FvcGVuJTIwbGFiZWwlM0ElMjJnb29kJTIwZmlyc3QlMjBpc3N1ZSUyMikuCi0gKipJZGVhcyBhbmQgZmVlZGJhY2sqKjogU3RhcnQgb3Igam9pbiBhIFtHaXRIdWIgRGlzY3Vzc2lvbl0oaHR0cHM6Ly9naXRodWIuY29tL2xhbmdnZW5pdXMvZGlmeS9kaXNjdXNzaW9ucykuCi0gKipUcmFuc2xhdGlvbnMqKjogRm9sbG93IHRoZSBbaW50ZXJuYXRpb25hbGl6YXRpb24gZ3VpZGVdKHdlYi9pMThuL1JFQURNRS5tZCkgdG8gYWRkIG9yIHVwZGF0ZSBhIGxvY2FsZS4KLSAqKkNvbW11bml0eSoqOiBTaGFyZSB0aGUgYXBwcyB5b3UgYnVpbGQsIGhlbHAgb3RoZXIgdXNlcnMsIGFuZCBzcHJlYWQgdGhlIHdvcmQgYWJvdXQgRGlmeS4KCiMjIyBDb250cmlidXRvcnMKCjxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9sYW5nZ2VuaXVzL2RpZnkvZ3JhcGhzL2NvbnRyaWJ1dG9ycyI+CiAgPGltZyBhbHQ9IkRpZnkgY29udHJpYnV0b3JzIiBzcmM9Imh0dHBzOi8vY29udHJpYi5yb2Nrcy9pbWFnZT9yZXBvPWxhbmdnZW5pdXMvZGlmeSIgLz4KPC9hPgoKIyMgQ29tbXVuaXR5ICYgY29udGFjdAoKQ2hvb3NlIHRoZSBjaGFubmVsIHRoYXQgYmVzdCBmaXRzIHlvdXIgcXVlc3Rpb246CgotIFtHaXRIdWIgRGlzY3Vzc2lvbnNdKGh0dHBzOi8vZ2l0aHViLmNvbS9sYW5nZ2VuaXVzL2RpZnkvZGlzY3Vzc2lvbnMpOiBHZXQgaGVscCwgc2hhcmUgZmVlZGJhY2ssIGFuZCBwcm9wb3NlIGlkZWFzLgotIFtHaXRIdWIgSXNzdWVzXShodHRwczovL2dpdGh1Yi5jb20vbGFuZ2dlbml1cy9kaWZ5L2lzc3Vlcyk6IFJlcG9ydCByZXByb2R1Y2libGUgYnVncyBhbmQgdHJhY2sgZW5naW5lZXJpbmcgd29yay4gUmVhZCB0aGUgW0NvbnRyaWJ1dGlvbiBHdWlkZV0oQ09OVFJJQlVUSU5HLm1kKSBiZWZvcmUgb3BlbmluZyBvbmUuCi0gW0Rpc2NvcmRdKGh0dHBzOi8vZGlzY29yZC5nZy9GbmdOSHBiY1k3KTogQ2hhdCBpbiByZWFsIHRpbWUsIHNoYXJlIHlvdXIgYXBwcywgYW5kIGNvbm5lY3Qgd2l0aCBvdGhlciBEaWZ5IHVzZXJzLgotIFtYXShodHRwczovL3guY29tL2RpZnlfYWkpOiBGb2xsb3cgRGlmeSBmb3IgcmVsZWFzZSBuZXdzIGFuZCBwcm9qZWN0IHVwZGF0ZXMuCgojIyBTdGFyIEhpc3RvcnkKClshW1N0YXIgSGlzdG9yeSBDaGFydF0oaHR0cHM6Ly9zdGFyLWhpc3RvcnkuZGVyYS5wYWdlL3N2Zz9yZXBvcz1sYW5nZ2VuaXVzL2RpZnkmdHlwZT1kYXRlJmxlZ2VuZD10b3AtbGVmdCldKGh0dHBzOi8vc3Rhci1oaXN0b3J5LmRlcmEucGFnZS9sYW5nZ2VuaXVzL2RpZnk/dHlwZT1kYXRlJmxlZ2VuZD10b3AtbGVmdCNnaC1saWdodC1tb2RlLW9ubHkpIFshW1N0YXIgSGlzdG9yeSBDaGFydF0oaHR0cHM6Ly9zdGFyLWhpc3RvcnkuZGVyYS5wYWdlL3N2Zz9yZXBvcz1sYW5nZ2VuaXVzL2RpZnkmdHlwZT1kYXRlJnRoZW1lPWRhcmsmbGVnZW5kPXRvcC1sZWZ0KV0oaHR0cHM6Ly9zdGFyLWhpc3RvcnkuZGVyYS5wYWdlL2xhbmdnZW5pdXMvZGlmeT90eXBlPWRhdGUmbGVnZW5kPXRvcC1sZWZ0I2doLWRhcmstbW9kZS1vbmx5KQoKIyMgU2VjdXJpdHkgZGlzY2xvc3VyZQoKUmVwb3J0IHZ1bG5lcmFiaWxpdGllcyBwcml2YXRlbHkgdGhyb3VnaCBHaXRIdWIgU2VjdXJpdHkgQWR2aXNvcmllcywgZm9sbG93aW5nIG91ciBbc2VjdXJpdHkgcG9saWN5XShTRUNVUklUWS5tZCkuIERvIG5vdCBkaXNjbG9zZSB0aGVtIGluIHB1YmxpYyBpc3N1ZXMsIGRpc2N1c3Npb25zLCBvciBwdWxsIHJlcXVlc3RzLgoKIyMgTGljZW5zZQoKVGhpcyByZXBvc2l0b3J5IGlzIGxpY2Vuc2VkIHVuZGVyIHRoZSBbRGlmeSBPcGVuIFNvdXJjZSBMaWNlbnNlXShMSUNFTlNFKSwgYmFzZWQgb24gQXBhY2hlIDIuMCB3aXRoIGFkZGl0aW9uYWwgY29uZGl0aW9ucy4K",
+      "encoding": "base64"
+    },
+    "/repos/langgenius/dify/issues?state=all&sort=updated&direction=desc&per_page=30&page=1": [
+      {
+        "html_url": "https://github.com/langgenius/dify/issues/44292",
+        "id": 5910400131,
+        "number": 44292,
+        "title": "refactor(web): replace the legacy Mermaid renderer with Pele",
+        "state": "closed",
+        "updated_at": "2026-10-18T15:13:20Z",
+        "type": null,
+        "body": "## Problem\n\nMarkdown Mermaid diagrams currently depend on a large feature-local Mermaid.js integration with separate rendering, theme, preview, and export behavior. We want to replace that implementation with Pele and align preview composition with the current Dify UI Dialog contracts.\n\n## Expected behavior\n\n- Render Mermaid code blocks using Pele, with application theme tokens and bounded parsing/output.\n- Preserve the last valid drawing during incomplete updates and open a stable preview snapshot.\n- Provide a full-screen, centered canvas with consistent zoom, keyboard interaction, image copy, SVG download, and opening the complete diagram in a new tab.\n- Use Dify UI Dialog primitives for focus and overlay lifecycle, and remove the previous renderer and obsolete controls.\n\n## Validation scope\n\nCover rendering, incomplete-input recovery, preview lifecycle, zoom geometry, accessibility, and export behavior through the public Markdown/diagram entrypoints. Verify the running development application and Storybook as well as automated tests.\n"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/issues/43455",
+        "id": 5687616015,
+        "number": 43455,
+        "title": "[Bug] ask_human can publish a form without a resumable Agent continuation",
+        "state": "open",
+        "updated_at": "2026-10-18T14:04:25Z",
+        "type": null,
+        "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/langgenius/dify/discussions/categories/general).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] 【中文用户 & Non English User】请使用英语提交，否则会被关闭 ：）\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### Dify version\n\nSource checkout of main at `43af5082d3c4ab8a96067370d2f86f214e3c85ae`.\n\n### Cloud or Self Hosted\n\nSelf Hosted (Source)\n\n### Steps to reproduce\n\nThis was reproduced in the source-level Workflow Agent and Agent App tests, using the real control flow with controlled persistence failures.\n\n1. Let an Agent run pause for `ask_human` and create a form.\n2. Make persistence of the session snapshot and pending form/tool correlation fail, or supply a paused terminal"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/issues/44289",
+        "id": 5908252709,
+        "number": 44289,
+        "title": "Notion page search textbox has no explicit accessible name",
+        "state": "closed",
+        "updated_at": "2026-10-18T10:12:28Z",
+        "type": null,
+        "body": "### Self Checks\n\n- [x] I have searched for existing issues and pull requests for this problem.\n\n### Dify version\n\nmain\n\n### Steps to reproduce\n\nOpen the Notion page picker when importing knowledge, then inspect the search textbox's computed accessible name. The input has a localized placeholder but no label or ARIA naming relationship; its accessible name is empty. Typing also removes the visible placeholder.\n\n### Expected behavior\n\nThe search textbox should have a persistent localized accessible name, including while a query is entered. Reuse the existing Search pages translation without changing the visual layout.\n\n### Proposed fix\n\nAdd an explicit aria-label and extend the existing picker interaction test to locate the textbox by role and name before typing, after typing, and after clearing.\n"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/issues/43823",
+        "id": 5789862125,
+        "number": 43823,
+        "title": "Agent app: parallel tool calls leave permanently spinning, empty tool entries in the thought panel",
+        "state": "closed",
+        "updated_at": "2026-10-18T07:45:54Z",
+        "type": null,
+        "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/langgenius/dify/discussions/categories/general).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] 【中文用户 & Non English User】请使用英语提交，否则会被关闭 ：）\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### Dify version\n\nDify 1.17.1\n\n### Cloud or Self Hosted\n\nSelf Hosted (Docker)\n\n### Steps to reproduce\n\n1. Create an **Agent app** with at least two independently callable query tools.\n2. Send a message that makes the model call **two tools in parallel in the same round** (any model that emits parallel tool calls).\n3. While the answer is still streaming, open the thought panel (\"思考过程\").\n\n\n### ✔️ Expected Behavior\n\nEach tool entry completes with its own observation once the "
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/issues/43849",
+        "id": 5797563567,
+        "number": 43849,
+        "title": "[Feature Request] Show application availability status and support filtering by unavailable dependencies",
+        "state": "open",
+        "updated_at": "2026-10-18T06:32:26Z",
+        "type": null,
+        "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### 1. Is this request related to a challenge you're experiencing? Tell me about your story.\n\nDevelopers currently have no quick way to identify all applications affected by an unavailable dependency. For example, after disabling a model, I need to inspect applications individually to find which ones use it and need to be repaired.\n\nPlease give applications an Available / Unavailable status, similar to knowledge bases, and expose it in the Studio application list. If an application uses an unavailable plugin, model, tool, knowledge base, or any other dependency that prevents it from functioning, the application should be marked Unavailable.\n\nSupport a Status filter with **Available**, *"
+      }
+    ],
+    "/repos/langgenius/dify/releases?per_page=10": [
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.17.1",
+        "id": 386157159,
+        "tag_name": "1.17.1",
+        "name": "v1.17.1 - Bug Fixes and Improvements",
+        "updated_at": "2026-09-10T10:17:09Z",
+        "published_at": "2026-09-10T10:04:06Z",
+        "body": "> [!WARNING]\r\n> **Self-hosted deployments using the bundled Weaviate must complete a manual, staged upgrade before starting 1.17.1.** The bundled Weaviate server moves from `1.27.0` to `1.39.2` — 12 minor versions — and skipping minors **is unsupported**. Pulling and restarting can silently and permanently break vector search. See Upgrade Guide below. Fresh deployments, external Weaviate, and other vector stores are unaffected.\r\n\r\n### New Features\r\n\r\n**Dataset-Scoped Knowledge Base API Keys**\r\n- Knowledge base service-API keys were scoped to the whole workspace: one key could read and write every knowledge base in the tenant, so giving an integration access to a single knowledge base meant giving it access to all of them. Keys can now be bound to specific knowledge bases from the knowledge base's API access panel, with a workspace / this-knowledge-base scope selector at creation time. A bound key returns `403` for any other dataset — both documents and retrieval — and for endpoints that carry no dataset ID, such as list-all. Existing keys are unbound and keep their workspace-wide behavior, so nothing changes when you upgrade. (#37569)\r\n\r\n**Keyboard Movement for Workflow Nodes and C"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.17.0",
+        "id": 376348099,
+        "tag_name": "1.17.0",
+        "name": "v1.17.0",
+        "updated_at": "2026-09-01T15:49:46Z",
+        "published_at": "2026-08-25T11:28:25Z",
+        "body": "## New Features\r\n\r\n**Agent: E2B Sandbox, Home Snapshots, and Skill Management**\r\n- **E2B sandbox backend**: agent shell/code execution can now run on [E2B](https://e2b.dev) cloud sandboxes in addition to the local sandbox. Select the backend with `DIFY_AGENT_RUNTIME_BACKEND`; a new `docker-compose.e2b.yaml` ships the E2B stack, E2B traffic is authenticated, and the E2B template is synced on release (#39480, #39705, #39873, #39996, #40858, #40871, #40891, #40892).\r\n- **Build-time Home Snapshots**: when an agent build is applied (published), the agent's sandbox home directory — installed packages, prepared files, working state — is captured and subsequent runs of the published agent restore their home directory from that snapshot, so the agent starts from the exact filesystem state it had at build time. (#39702, #40876, #40996).\r\n- **Workspace-level Skill management**: Skills are reusable, versioned capabilities packaged with code and tool definitions that agents can discover and invoke. A new workspace-level skills manager with draft → publish → version lifecycle ships alongside a web UI (skill listing, builder panel, file editor).  (#39675, #39798, #39799, #41180).\r\n- **Context-awa"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.16.1",
+        "id": 360820489,
+        "tag_name": "1.16.1",
+        "name": "v1.16.1 - Bug Fixes and Security Enhancements",
+        "updated_at": "2026-09-01T15:59:51Z",
+        "published_at": "2026-07-28T03:43:51Z",
+        "body": "## What's Changed\r\n\r\n### New Features\r\n**Tool Multi-Select Input**\r\n- Workflow tool nodes now support multi-select dropdown inputs, allowing users to choose multiple values from a predefined list when configuring tool parameters. (#39346)\r\n\r\n**Workflow Node Locator**\r\n- You can now click a node_id in workflow run logs or error messages to locate and highlight the corresponding node in the workflow editor canvas. (#38187)\r\n\r\n**Workflow Block Selector Improvements**\r\n- The block selector panel now features improved keyboard navigation, category previews, and a more intuitive search experience when adding nodes to workflows. (#39212)\r\n\r\n**Export Agent DSL from Sidebar**\r\n- Agent apps can now be exported as DSL YAML directly from the app sidebar menu, making it easy to back up or version-control agent configurations. (#39299)\r\n\r\n**Knowledge Tracing**\r\n- Added more observability traces to knowledge/RAG document processing operations, improving visibility into indexing pipelines. (#38959)\r\n\r\n\r\n---\r\n\r\n### Bug Fixes\r\n\r\n**Workflow & Collaboration**\r\n- Fixed hidden-tab collaboration leader saving stale drafts when the tab is inactive (#38997)\r\n- Fixed unsaved edits being dropped when collabo"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.16.0",
+        "id": 355594285,
+        "tag_name": "1.16.0",
+        "name": "v1.16.0",
+        "updated_at": "2026-09-01T16:00:43Z",
+        "published_at": "2026-07-17T11:14:06Z",
+        "body": "# Introducing Dify Agent *(Beta)*: A New Agent Experience in Dify\r\n\r\n> [!WARNING]\r\n> You should provide Dify Agent services ⚠️**only to trusted, non-malicious users**⚠️.\r\n\r\nAs many of you know, the shell-based LLM agent paradigm has brought a major leap in agent capabilities and changed how we think about agents. Meanwhile, Skills provide a standardized way to package and distribute capabilities, making it easier to build powerful agents.\r\n\r\n\r\nToday, we are launching Dify Agent. Like other leading agents, it runs in a Linux sandbox. This release includes:\r\n\r\n- A builder for creating Dify Agents\r\n  - You can build Dify Agents through the UI: set a base prompt, upload Skills and files, and connect tools and knowledge from the Dify ecosystem.\r\n  - We also provide an agent that helps you build Dify Agents. Through conversation, it can configure the Linux sandbox environment, install required packages, and create new Skills and files that your Dify Agent can use later.\r\n\r\n- Dify Workflow integration for Dify Agent\r\n  - You can use an existing Dify Agent in a Dify Workflow, or temporarily create an inline Dify Agent. It will execute the task defined by the workflow node, generate the req"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.16.0-rc1",
+        "id": 351495302,
+        "tag_name": "1.16.0-rc1",
+        "name": "v1.16.0-rc1",
+        "updated_at": "2026-07-09T14:06:30Z",
+        "published_at": "2026-07-09T14:06:30Z",
+        "body": "# Introducing Dify Agent *(Experimental)*: A New Agent Experience in Dify\r\n\r\n> [!WARNING]\r\n> You should provide Dify Agent services ⚠️**only to trusted, non-malicious users**⚠️.\r\n\r\nAs many of you know, the shell-based LLM agent paradigm has brought a major leap in agent capabilities and changed how we think about agents. Meanwhile, Skills provide a standardized way to package and distribute capabilities, making it easier to build powerful agents.\r\n\r\nToday, we are experimentally launching Dify Agent. Like other leading agents, it runs in a Linux sandbox. This release includes:\r\n\r\n- A builder for creating Dify Agents\r\n  - You can build Dify Agents through the UI: set a base prompt, upload Skills and files, and connect tools and knowledge from the Dify ecosystem.\r\n  - We also provide an agent that helps you build Dify Agents. Through conversation, it can configure the Linux sandbox environment, install required packages, and create new Skills and files that your Dify Agent can use later.\r\n\r\n- Dify Workflow integration for Dify Agent\r\n  - You can use an existing Dify Agent in a Dify Workflow, or temporarily create an inline Dify Agent. It will execute the task defined by the workflow n"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.15.0",
+        "id": 344699591,
+        "tag_name": "1.15.0",
+        "name": "1.15.0",
+        "updated_at": "2026-09-01T16:00:04Z",
+        "published_at": "2026-06-25T13:16:14Z",
+        "body": "# Dify 1.15.0 Release Note\r\n\r\n## What's Changed\r\n\r\n### UX & UI Enhancements\r\n\r\n<img width=\"1920\" height=\"1044\" alt=\"录屏2026-06-25 21 12 33\" src=\"https://github.com/user-attachments/assets/c3ac7394-2ccf-4a66-873a-b7224a16897a\" />\r\n\r\n\r\n- **Redesigned landing / onboarding** for an easier first-run experience (#37433, #37844, #37800)\r\n- **Faster navigation** — improved \"go to anything\" palette and autofocused search inputs (#32130, #37175)\r\n- **Safer deletes** — one-click confirmation before removing an app (#37263)\r\n- **Cleaner workflow editor** with collapsible panels (#37276)\r\n- **Clearer notifications** — consistent toasts that show long errors in full (#37382, #37581)\r\n- **More accessible** — plugin permission hints, restored contact-us menu, skip-nav link, and keyboard focus polish (#37310, #37774, #37644)\r\n\r\n### New Features\r\n**difyctl — drive Dify from the command line** ([Docs](https://docs.dify.ai/en/cli/overview))\r\n- difyctl is a command-line client for Dify: you can now run apps and workflows straight from your terminal, so personal agents, scripts, and CI pipelines can invoke Dify workflows without opening the web UI (#37036)\r\n- Install it on any platform (macOS, Linux, Win"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.14.2",
+        "id": 324730496,
+        "tag_name": "1.14.2",
+        "name": "v1.14.2 - Security fixes, agent groundwork, workflow reliability, and deployment updates",
+        "updated_at": "2026-05-19T05:34:25Z",
+        "published_at": "2026-05-19T05:34:25Z",
+        "body": "## 🚀 What's New in v1.14.2?\r\n\r\nv1.14.2 is a patch release focused on security hardening, workflow and knowledge reliability, observability fixes, agent groundwork, and deployment/runtime tuning after v1.14.1.\r\n\r\n### 🔐 Security and administration\r\n\r\n- **Tenant-scoped sensitive endpoints** — strengthened tenant isolation for app trace-config endpoints and FilePreview text extraction. Thanks @xr843 in [#35793](https://github.com/langgenius/dify/pull/35793) and [#35797](https://github.com/langgenius/dify/pull/35797).\r\n- **Tool credential safety** — restricted default builtin tool credential updates to workspace admins and owners, and cleaned stale tenant tool credentials during `reset-encrypt-key-pair`. Thanks @NeatGuyCoding and @xr843 in [#36264](https://github.com/langgenius/dify/pull/36264) and [#35843](https://github.com/langgenius/dify/pull/35843).\r\n\r\n### 🧩 Workflow, HITL, and app runtime\r\n\r\n- **Workflow execution reliability** — restored tracing after HITL workflow resume, improved workflow run callback tracking, reduced message-update database roundtrips, fixed memory fetches outside Flask context, and closed base64 file lookup sessions correctly. Thanks @Blackoutta, @CodingO"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.14.1",
+        "id": 321018473,
+        "tag_name": "1.14.1",
+        "name": "v1.14.1 - Security hardening, workflow stability, and cleaner self-hosted deployments",
+        "updated_at": "2026-05-12T08:19:23Z",
+        "published_at": "2026-05-12T08:19:23Z",
+        "body": "## 🚀 What's New in v1.14.1?\r\n\r\nv1.14.1 is a patch release focused on security hardening, workflow and knowledge-base stability, deployment cleanup, and continued UI platform migration after v1.14.0.\r\n\r\n### 🔐 Security\r\n\r\n- **Self-hosted `SECRET_KEY` hardening** — Docker deployments no longer rely on a public default key. When `SECRET_KEY` is left empty, the API generates and persists a runtime key through the configured storage backend, while explicitly configured keys continue to work as before. Thanks @laipz8200 in [#36049](https://github.com/langgenius/dify/pull/36049).\r\n- **Internal metrics endpoint protection** — `/threads` and `/db-pool-stat` are hardened to avoid unauthenticated exposure of internal runtime and database-pool details. Thanks @orbisai0security in [#35665](https://github.com/langgenius/dify/pull/35665).\r\n- **Account and tool isolation** — fixed an IDOR issue in `GET /account/avatar` and scoped builtin-tool default-credential cleanup to the current tenant. Thanks @NeatGuyCoding and @GareArc in [#35771](https://github.com/langgenius/dify/pull/35771) and [#35887](https://github.com/langgenius/dify/pull/35887).\r\n- **Dependency security** — upgraded LiteLLM for CVE"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.14.0",
+        "id": 314986233,
+        "tag_name": "1.14.0",
+        "name": "v1.14.0",
+        "updated_at": "2026-04-29T04:18:49Z",
+        "published_at": "2026-04-29T04:06:08Z",
+        "body": "## 🚀 What's New in v1.14.0?\r\n\r\n### Collaboration\r\n<img width=\"2632\" height=\"1190\" alt=\"img_v3_02117_67a67218-1ae5-4d68-a45b-3ada592f87fg\" src=\"https://github.com/user-attachments/assets/1d4a3660-8a6a-4b29-9766-4d5b5fd9a51b\" />\r\n\r\nCollaboration allows workspace members to edit the same workflow together, with synced graph updates, online presence, and shared visibility into who is working where.\r\n\r\nOn self-hosted deployments, collaboration is turned off by default. Enable it by setting:\r\n\r\n```\r\nENABLE_COLLABORATION_MODE = true\r\nSERVER_WORKER_CLASS = geventwebsocket.gunicorn.workers.GeventWebSocketWorker\r\nNEXT_PUBLIC_SOCKET_URL = your deployment’s WebSocket URL (e.g., wss://dify.example.com)\r\n```\r\n\r\nFor more details, see [Full Documentation](https://docs.dify.ai/en/use-dify/build/workflow-collaboration)\r\n\r\n### Human-in-the-loop (HITL)\r\n\r\n- **Service API for HITL** — programmatic support for human-in-the-loop flows alongside existing console behavior.\r\n\r\n### MCP and plugins\r\n\r\n- **MCP tool metadata** — refresh after updates so the UI stays in sync.\r\n- **MCP server URL** — fix double `/v1` that could break OAuth and authorization (404).\r\n- **MCP OAuth discovery** — handle malformed JS"
+      },
+      {
+        "html_url": "https://github.com/langgenius/dify/releases/tag/1.13.3",
+        "id": 302258183,
+        "tag_name": "1.13.3",
+        "name": "v1.13.3",
+        "updated_at": "2026-05-26T06:25:46Z",
+        "published_at": "2026-03-27T08:46:46Z",
+        "body": "## 🚀 What's New in v1.13.3?\r\nOur latest patch release, v1.13.3, focuses on stability and correctness across workflow execution, streaming, and knowledge retrieval. Here's a quick look at the most important updates:\r\n\r\n### 🎬 New Features\r\n- **Workflow Configuration**: Added variable-reference support for model parameters in LLM, Question Classifier, and Variable Extractor nodes by @scdeng in #33082.\r\n\r\n### 🛠️ Bug Fixes\r\n- **Streaming Reliability**: Fixed `StreamsBroadcastChannel` replay and concurrency issues to keep frontend/backend event delivery stable by @QuantumGhost in #34030 and #34061.\r\n- **Workflow Editor Behavior**: Fixed pasted nodes retaining Loop/Iteration metadata and prevented `HumanInput` nodes from being pasted into invalid containers by @majiayu000 and @hjlarry in #29983 and #34077.\r\n- **Runtime Execution**: Restored prompt message transformation logic and corrected `max_retries=0` handling for executor-driven HTTP Request execution by @QuantumGhost, @fatelei, and @kurokobo in #33666, #33619, and #33688.\r\n- **Knowledge Retrieval**: Preserved citation metadata in web responses, fixed crashes when dataset icon metadata is missing, corrected hit-count query filteri"
+      }
+    ],
+    "/repos/langgenius/dify/contents": [
+      {
+        "name": ".agents",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.agents",
+        "type": "dir"
+      },
+      {
+        "name": ".claude",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.claude",
+        "type": "dir"
+      },
+      {
+        "name": ".coveragerc",
+        "size": 104,
+        "html_url": "https://github.com/langgenius/dify/blob/main/.coveragerc",
+        "type": "file"
+      },
+      {
+        "name": ".devcontainer",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.devcontainer",
+        "type": "dir"
+      },
+      {
+        "name": ".dockerignore",
+        "size": 170,
+        "html_url": "https://github.com/langgenius/dify/blob/main/.dockerignore",
+        "type": "file"
+      },
+      {
+        "name": ".editorconfig",
+        "size": 891,
+        "html_url": "https://github.com/langgenius/dify/blob/main/.editorconfig",
+        "type": "file"
+      },
+      {
+        "name": ".gitattributes",
+        "size": 826,
+        "html_url": "https://github.com/langgenius/dify/blob/main/.gitattributes",
+        "type": "file"
+      },
+      {
+        "name": ".github",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.github",
+        "type": "dir"
+      },
+      {
+        "name": ".gitignore",
+        "size": 4547,
+        "html_url": "https://github.com/langgenius/dify/blob/main/.gitignore",
+        "type": "file"
+      },
+      {
+        "name": ".vite-hooks",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.vite-hooks",
+        "type": "dir"
+      },
+      {
+        "name": ".vscode",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/.vscode",
+        "type": "dir"
+      },
+      {
+        "name": "AGENTS.md",
+        "size": 927,
+        "html_url": "https://github.com/langgenius/dify/blob/main/AGENTS.md",
+        "type": "file"
+      },
+      {
+        "name": "AUTHORS",
+        "size": 56,
+        "html_url": "https://github.com/langgenius/dify/blob/main/AUTHORS",
+        "type": "file"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "size": 5119,
+        "html_url": "https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "LICENSE",
+        "size": 1801,
+        "html_url": "https://github.com/langgenius/dify/blob/main/LICENSE",
+        "type": "file"
+      },
+      {
+        "name": "Makefile",
+        "size": 9224,
+        "html_url": "https://github.com/langgenius/dify/blob/main/Makefile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "size": 12132,
+        "html_url": "https://github.com/langgenius/dify/blob/main/README.md",
+        "type": "file"
+      },
+      {
+        "name": "SECURITY.md",
+        "size": 1116,
+        "html_url": "https://github.com/langgenius/dify/blob/main/SECURITY.md",
+        "type": "file"
+      },
+      {
+        "name": "api",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/api",
+        "type": "dir"
+      },
+      {
+        "name": "cli",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/cli",
+        "type": "dir"
+      },
+      {
+        "name": "codecov.yml",
+        "size": 565,
+        "html_url": "https://github.com/langgenius/dify/blob/main/codecov.yml",
+        "type": "file"
+      },
+      {
+        "name": "depot.json",
+        "size": 20,
+        "html_url": "https://github.com/langgenius/dify/blob/main/depot.json",
+        "type": "file"
+      },
+      {
+        "name": "dev",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/dev",
+        "type": "dir"
+      },
+      {
+        "name": "dify-agent-runtime",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/dify-agent-runtime",
+        "type": "dir"
+      },
+      {
+        "name": "dify-agent",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/dify-agent",
+        "type": "dir"
+      },
+      {
+        "name": "docker",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/docker",
+        "type": "dir"
+      },
+      {
+        "name": "docs",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/docs",
+        "type": "dir"
+      },
+      {
+        "name": "e2e",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/e2e",
+        "type": "dir"
+      },
+      {
+        "name": "eslint.config.mjs",
+        "size": 11141,
+        "html_url": "https://github.com/langgenius/dify/blob/main/eslint.config.mjs",
+        "type": "file"
+      },
+      {
+        "name": "images",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/images",
+        "type": "dir"
+      },
+      {
+        "name": "knip.config.ts",
+        "size": 1669,
+        "html_url": "https://github.com/langgenius/dify/blob/main/knip.config.ts",
+        "type": "file"
+      },
+      {
+        "name": "lint.config.ts",
+        "size": 56992,
+        "html_url": "https://github.com/langgenius/dify/blob/main/lint.config.ts",
+        "type": "file"
+      },
+      {
+        "name": "oxlint-suppressions.json",
+        "size": 90269,
+        "html_url": "https://github.com/langgenius/dify/blob/main/oxlint-suppressions.json",
+        "type": "file"
+      },
+      {
+        "name": "package.json",
+        "size": 2325,
+        "html_url": "https://github.com/langgenius/dify/blob/main/package.json",
+        "type": "file"
+      },
+      {
+        "name": "packages",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/packages",
+        "type": "dir"
+      },
+      {
+        "name": "pnpm-lock.yaml",
+        "size": 641933,
+        "html_url": "https://github.com/langgenius/dify/blob/main/pnpm-lock.yaml",
+        "type": "file"
+      },
+      {
+        "name": "pnpm-workspace.yaml",
+        "size": 7201,
+        "html_url": "https://github.com/langgenius/dify/blob/main/pnpm-workspace.yaml",
+        "type": "file"
+      },
+      {
+        "name": "scripts",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/scripts",
+        "type": "dir"
+      },
+      {
+        "name": "sdks",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/sdks",
+        "type": "dir"
+      },
+      {
+        "name": "skills",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/skills",
+        "type": "dir"
+      },
+      {
+        "name": "tsconfig.json",
+        "size": 72,
+        "html_url": "https://github.com/langgenius/dify/blob/main/tsconfig.json",
+        "type": "file"
+      },
+      {
+        "name": "vite.config.ts",
+        "size": 3229,
+        "html_url": "https://github.com/langgenius/dify/blob/main/vite.config.ts",
+        "type": "file"
+      },
+      {
+        "name": "web",
+        "size": 0,
+        "html_url": "https://github.com/langgenius/dify/tree/main/web",
+        "type": "dir"
+      }
+    ],
+    "/repos/langchain-ai/langgraph": {
+      "id": 676672661,
+      "name": "langgraph",
+      "full_name": "langchain-ai/langgraph",
+      "private": false,
+      "html_url": "https://github.com/langchain-ai/langgraph",
+      "description": "Build resilient agents.",
+      "updated_at": "2026-10-18T14:56:37Z",
+      "size": 528848,
+      "stargazers_count": 43444,
+      "language": "Python",
+      "archived": false,
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "multiagent",
+        "open-source",
+        "openai",
+        "pydantic",
+        "python",
+        "rag"
+      ]
+    },
+    "/repos/langchain-ai/langgraph/readme": {
+      "name": "README.md",
+      "size": 6395,
+      "html_url": "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+      "type": "file",
+      "content": "PGRpdiBhbGlnbj0iY2VudGVyIj4KICA8YSBocmVmPSJodHRwczovL3d3dy5sYW5nY2hhaW4uY29tL2xhbmdncmFwaCI+CiAgICA8cGljdHVyZT4KICAgICAgPHNvdXJjZSBtZWRpYT0iKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSIgc3Jjc2V0PSIuZ2l0aHViL2ltYWdlcy9sb2dvLWRhcmsuc3ZnIj4KICAgICAgPHNvdXJjZSBtZWRpYT0iKHByZWZlcnMtY29sb3Itc2NoZW1lOiBsaWdodCkiIHNyY3NldD0iLmdpdGh1Yi9pbWFnZXMvbG9nby1saWdodC5zdmciPgogICAgICA8aW1nIGFsdD0iTGFuZ0dyYXBoIExvZ28iIHNyYz0iLmdpdGh1Yi9pbWFnZXMvbG9nby1kYXJrLnN2ZyIgd2lkdGg9IjUwJSI+CiAgICA8L3BpY3R1cmU+CiAgPC9hPgo8L2Rpdj4KCjxkaXYgYWxpZ249ImNlbnRlciI+CiAgPGgzPkxvdy1sZXZlbCBvcmNoZXN0cmF0aW9uIGZyYW1ld29yayBmb3IgYnVpbGRpbmcgc3RhdGVmdWwgYWdlbnRzLjwvaDM+CjwvZGl2PgoKPGRpdiBhbGlnbj0iY2VudGVyIj4KICA8YSBocmVmPSJodHRwczovL29wZW5zb3VyY2Uub3JnL2xpY2Vuc2VzL01JVCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL3B5cGkvbC9sYW5nZ3JhcGgiIGFsdD0iUHlQSSAtIExpY2Vuc2UiPjwvYT4KICA8YSBocmVmPSJodHRwczovL3B5cGlzdGF0cy5vcmcvcGFja2FnZXMvbGFuZ2dyYXBoIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vcGVweS9kdC9sYW5nZ3JhcGgiIGFsdD0iUHlQSSAtIERvd25sb2FkcyI+PC9hPgogIDxhIGhyZWY9Imh0dHBzOi8vcHlwaS5vcmcvcHJvamVjdC9sYW5nZ3JhcGgvIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vcHlwaS92L2xhbmdncmFwaC5zdmc/bGFiZWw9JTIwIiBhbHQ9IlZlcnNpb24iPjwvYT4KICA8YSBocmVmPSJodHRwczovL3guY29tL2xhbmdjaGFpbl9vc3MiIHRhcmdldD0iX2JsYW5rIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby90d2l0dGVyL3VybC9odHRwcy90d2l0dGVyLmNvbS9sYW5nY2hhaW5fb3NzLnN2Zz9zdHlsZT1zb2NpYWwmbGFiZWw9Rm9sbG93JTIwJTQwTGFuZ0NoYWluIiBhbHQ9IlR3aXR0ZXIgLyBYIj48L2E+CjwvZGl2PgoKPGJyPgoKVHJ1c3RlZCBieSBjb21wYW5pZXMgc2hhcGluZyB0aGUgZnV0dXJlIG9mIGFnZW50cyDigJMgaW5jbHVkaW5nIEtsYXJuYSwgUmVwbGl0LCBFbGFzdGljLCBhbmQgbW9yZSDigJMgTGFuZ0dyYXBoIGlzIGEgbG93LWxldmVsIG9yY2hlc3RyYXRpb24gZnJhbWV3b3JrIGZvciBidWlsZGluZywgbWFuYWdpbmcsIGFuZCBkZXBsb3lpbmcgbG9uZy1ydW5uaW5nLCBzdGF0ZWZ1bCBhZ2VudHMuCgpgYGBiYXNoCnBpcCBpbnN0YWxsIC1VIGxhbmdncmFwaApgYGAKCj4gWyFUSVBdCj4gSWYgeW91J3JlIGxvb2tpbmcgdG8gcXVpY2tseSBidWlsZCBhZ2VudHMsIGNoZWNrIG91dCAqKltEZWVwIEFnZW50c10oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9kZWVwYWdlbnRzL292ZXJ2aWV3KSoqIOKAlCBhIGhpZ2hlci1sZXZlbCBwYWNrYWdlIGJ1aWx0IG9uIExhbmdHcmFwaCBmb3IgYWdlbnRzIHRoYXQgY2FuIHBsYW4sIHVzZSBzdWJhZ2VudHMsIGFuZCBsZXZlcmFnZSBmaWxlIHN5c3RlbXMgZm9yIGNvbXBsZXggdGFza3MuCgpGb3IgYW4gZXF1aXZhbGVudCBKUy9UUyBsaWJyYXJ5LCBjaGVjayBvdXQgW0xhbmdHcmFwaC5qc10oaHR0cHM6Ly9naXRodWIuY29tL2xhbmdjaGFpbi1haS9sYW5nZ3JhcGhqcykgYW5kIHRoZSBbSlMgZG9jc10oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL2phdmFzY3JpcHQvbGFuZ2dyYXBoL292ZXJ2aWV3KS4KCiMjIFdoeSB1c2UgTGFuZ0dyYXBoPwoKTGFuZ0dyYXBoIHByb3ZpZGVzIGxvdy1sZXZlbCBzdXBwb3J0aW5nIGluZnJhc3RydWN0dXJlIGZvciAqYW55KiBsb25nLXJ1bm5pbmcsIHN0YXRlZnVsIHdvcmtmbG93IG9yIGFnZW50OgoKLSAqKltEdXJhYmxlIGV4ZWN1dGlvbl0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9sYW5nZ3JhcGgvZHVyYWJsZS1leGVjdXRpb24pKiog4oCUIEJ1aWxkIGFnZW50cyB0aGF0IHBlcnNpc3QgdGhyb3VnaCBmYWlsdXJlcyBhbmQgY2FuIHJ1biBmb3IgZXh0ZW5kZWQgcGVyaW9kcywgYXV0b21hdGljYWxseSByZXN1bWluZyBmcm9tIGV4YWN0bHkgd2hlcmUgdGhleSBsZWZ0IG9mZi4KLSAqKltIdW1hbi1pbi10aGUtbG9vcF0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9sYW5nZ3JhcGgvaW50ZXJydXB0cykqKiDigJQgU2VhbWxlc3NseSBpbmNvcnBvcmF0ZSBodW1hbiBvdmVyc2lnaHQgYnkgaW5zcGVjdGluZyBhbmQgbW9kaWZ5aW5nIGFnZW50IHN0YXRlIGF0IGFueSBwb2ludCBkdXJpbmcgZXhlY3V0aW9uLgotICoqW0NvbXByZWhlbnNpdmUgbWVtb3J5XShodHRwczovL2RvY3MubGFuZ2NoYWluLmNvbS9vc3MvcHl0aG9uL2xhbmdncmFwaC9tZW1vcnkpKiog4oCUIENyZWF0ZSB0cnVseSBzdGF0ZWZ1bCBhZ2VudHMgd2l0aCBib3RoIHNob3J0LXRlcm0gd29ya2luZyBtZW1vcnkgZm9yIG9uZ29pbmcgcmVhc29uaW5nIGFuZCBsb25nLXRlcm0gcGVyc2lzdGVudCBtZW1vcnkgYWNyb3NzIHNlc3Npb25zLgotICoqW0RlYnVnZ2luZyB3aXRoIExhbmdTbWl0aF0oaHR0cHM6Ly93d3cubGFuZ2NoYWluLmNvbS9sYW5nc21pdGgpKiog4oCUIEdhaW4gZGVlcCB2aXNpYmlsaXR5IGludG8gY29tcGxleCBhZ2VudCBiZWhhdmlvciB3aXRoIHZpc3VhbGl6YXRpb24gdG9vbHMgdGhhdCB0cmFjZSBleGVjdXRpb24gcGF0aHMsIGNhcHR1cmUgc3RhdGUgdHJhbnNpdGlvbnMsIGFuZCBwcm92aWRlIGRldGFpbGVkIHJ1bnRpbWUgbWV0cmljcy4KLSAqKltQcm9kdWN0aW9uLXJlYWR5IGRlcGxveW1lbnRdKGh0dHBzOi8vZG9jcy5sYW5nY2hhaW4uY29tL2xhbmdzbWl0aC9kZXBsb3ltZW50cykqKiDigJQgRGVwbG95IHNvcGhpc3RpY2F0ZWQgYWdlbnQgc3lzdGVtcyBjb25maWRlbnRseSB3aXRoIHNjYWxhYmxlIGluZnJhc3RydWN0dXJlIGRlc2lnbmVkIHRvIGhhbmRsZSB0aGUgdW5pcXVlIGNoYWxsZW5nZXMgb2Ygc3RhdGVmdWwsIGxvbmctcnVubmluZyB3b3JrZmxvd3MuCgo+IFshVElQXQo+IEZvciBkZXZlbG9waW5nLCBkZWJ1Z2dpbmcsIGFuZCBkZXBsb3lpbmcgQUkgYWdlbnRzIGFuZCBMTE0gYXBwbGljYXRpb25zLCBzZWUgW0xhbmdTbWl0aF0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vbGFuZ3NtaXRoL2hvbWUpLgoKIyMgTGFuZ0dyYXBoIGVjb3N5c3RlbQoKV2hpbGUgTGFuZ0dyYXBoIGNhbiBiZSB1c2VkIHN0YW5kYWxvbmUsIGl0IGFsc28gaW50ZWdyYXRlcyBzZWFtbGVzc2x5IHdpdGggYW55IExhbmdDaGFpbiBwcm9kdWN0LCBnaXZpbmcgZGV2ZWxvcGVycyBhIGZ1bGwgc3VpdGUgb2YgdG9vbHMgZm9yIGJ1aWxkaW5nIGFnZW50cy4KClRvIGltcHJvdmUgeW91ciBMTE0gYXBwbGljYXRpb24gZGV2ZWxvcG1lbnQsIHBhaXIgTGFuZ0dyYXBoIHdpdGg6CgotIFtEZWVwIEFnZW50c10oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9kZWVwYWdlbnRzL292ZXJ2aWV3KSDigJMgQnVpbGQgYWdlbnRzIHRoYXQgY2FuIHBsYW4sIHVzZSBzdWJhZ2VudHMsIGFuZCBsZXZlcmFnZSBmaWxlIHN5c3RlbXMgZm9yIGNvbXBsZXggdGFza3MuCi0gW0xhbmdDaGFpbl0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9sYW5nY2hhaW4vb3ZlcnZpZXcpIOKAkyBQcm92aWRlcyBpbnRlZ3JhdGlvbnMgYW5kIGNvbXBvc2FibGUgY29tcG9uZW50cyB0byBzdHJlYW1saW5lIExMTSBhcHBsaWNhdGlvbiBkZXZlbG9wbWVudC4KLSBbTGFuZ1NtaXRoXShodHRwczovL3d3dy5sYW5nY2hhaW4uY29tL2xhbmdzbWl0aCkg4oCTIEhlbHBmdWwgZm9yIGFnZW50IGV2YWxzIGFuZCBvYnNlcnZhYmlsaXR5LiBEZWJ1ZyBwb29yLXBlcmZvcm1pbmcgTExNIGFwcCBydW5zLCBldmFsdWF0ZSBhZ2VudCB0cmFqZWN0b3JpZXMsIGdhaW4gdmlzaWJpbGl0eSBpbiBwcm9kdWN0aW9uLCBhbmQgaW1wcm92ZSBwZXJmb3JtYW5jZSBvdmVyIHRpbWUuCi0gW0xhbmdTbWl0aCBEZXBsb3ltZW50XShodHRwczovL2RvY3MubGFuZ2NoYWluLmNvbS9sYW5nc21pdGgvZGVwbG95bWVudHMpIOKAkyBEZXBsb3kgYW5kIHNjYWxlIGFnZW50cyBlZmZvcnRsZXNzbHkgd2l0aCBhIHB1cnBvc2UtYnVpbHQgZGVwbG95bWVudCBwbGF0Zm9ybSBmb3IgbG9uZy1ydW5uaW5nLCBzdGF0ZWZ1bCB3b3JrZmxvd3MuIERpc2NvdmVyLCByZXVzZSwgY29uZmlndXJlLCBhbmQgc2hhcmUgYWdlbnRzIGFjcm9zcyB0ZWFtcyDigJMgYW5kIGl0ZXJhdGUgcXVpY2tseSB3aXRoIHZpc3VhbCBwcm90b3R5cGluZyBpbiBbTGFuZ1NtaXRoIFN0dWRpb10oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vbGFuZ3NtaXRoL3N0dWRpbykuCgotLS0KCiMjIERvY3VtZW50YXRpb24KCi0gW2RvY3MubGFuZ2NoYWluLmNvbV0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9sYW5nZ3JhcGgvb3ZlcnZpZXcpIOKAkyBDb21wcmVoZW5zaXZlIGRvY3VtZW50YXRpb24sIGluY2x1ZGluZyBjb25jZXB0dWFsIG92ZXJ2aWV3cyBhbmQgZ3VpZGVzCi0gW3JlZmVyZW5jZS5sYW5nY2hhaW4uY29tL3B5dGhvbi9sYW5nZ3JhcGhdKGh0dHBzOi8vcmVmZXJlbmNlLmxhbmdjaGFpbi5jb20vcHl0aG9uL2xhbmdncmFwaCkg4oCTIEFQSSByZWZlcmVuY2UgZG9jcyBmb3IgTGFuZ0dyYXBoIHBhY2thZ2VzCi0gW0xhbmdHcmFwaCBRdWlja3N0YXJ0XShodHRwczovL2RvY3MubGFuZ2NoYWluLmNvbS9vc3MvcHl0aG9uL2xhbmdncmFwaC9xdWlja3N0YXJ0KSDigJMgR2V0IHN0YXJ0ZWQgYnVpbGRpbmcgd2l0aCBMYW5nR3JhcGgKLSBbQ2hhdCBMYW5nQ2hhaW5dKGh0dHBzOi8vY2hhdC5sYW5nY2hhaW4uY29tLykg4oCTIENoYXQgd2l0aCB0aGUgTGFuZ0NoYWluIGRvY3VtZW50YXRpb24gYW5kIGdldCBhbnN3ZXJzIHRvIHlvdXIgcXVlc3Rpb25zCgoqKkRpc2N1c3Npb25zKio6IFZpc2l0IHRoZSBbTGFuZ0NoYWluIEZvcnVtXShodHRwczovL2ZvcnVtLmxhbmdjaGFpbi5jb20pIHRvIGNvbm5lY3Qgd2l0aCB0aGUgY29tbXVuaXR5IGFuZCBzaGFyZSBhbGwgb2YgeW91ciB0ZWNobmljYWwgcXVlc3Rpb25zLCBpZGVhcywgYW5kIGZlZWRiYWNrLgoKIyMgQWRkaXRpb25hbCByZXNvdXJjZXMKCi0gKipbR3VpZGVzXShodHRwczovL2RvY3MubGFuZ2NoYWluLmNvbS9vc3MvcHl0aG9uL2xlYXJuKSoqIOKAkyBRdWljaywgYWN0aW9uYWJsZSBjb2RlIHNuaXBwZXRzIGZvciB0b3BpY3Mgc3VjaCBhcyBzdHJlYW1pbmcsIGFkZGluZyBtZW1vcnkgJiBwZXJzaXN0ZW5jZSwgYW5kIGRlc2lnbiBwYXR0ZXJucyAoZS5nLiBicmFuY2hpbmcsIHN1YmdyYXBocywgZXRjLikuCi0gKipbTGFuZ0NoYWluIEFjYWRlbXldKGh0dHBzOi8vYWNhZGVteS5sYW5nY2hhaW4uY29tL2NvdXJzZXMvaW50cm8tdG8tbGFuZ2dyYXBoKSoqIOKAkyBMZWFybiB0aGUgYmFzaWNzIG9mIExhbmdHcmFwaCBpbiBvdXIgZnJlZSwgc3RydWN0dXJlZCBjb3Vyc2UuCi0gKipbQ2FzZSBzdHVkaWVzXShodHRwczovL3d3dy5sYW5nY2hhaW4uY29tL2J1aWx0LXdpdGgtbGFuZ2dyYXBoKSoqIOKAkyBIZWFyIGhvdyBpbmR1c3RyeSBsZWFkZXJzIHVzZSBMYW5nR3JhcGggdG8gc2hpcCBBSSBhcHBsaWNhdGlvbnMgYXQgc2NhbGUuCi0gW0NvbnRyaWJ1dGluZyBHdWlkZV0oaHR0cHM6Ly9kb2NzLmxhbmdjaGFpbi5jb20vb3NzL3B5dGhvbi9jb250cmlidXRpbmcvb3ZlcnZpZXcpIOKAkyBMZWFybiBob3cgdG8gY29udHJpYnV0ZSB0byBMYW5nQ2hhaW4gcHJvamVjdHMgYW5kIGZpbmQgZ29vZCBmaXJzdCBpc3N1ZXMuCi0gW0NvZGUgb2YgQ29uZHVjdF0oaHR0cHM6Ly9naXRodWIuY29tL2xhbmdjaGFpbi1haS9sYW5nY2hhaW4vP3RhYj1jb2Mtb3YtZmlsZSkg4oCTIE91ciBjb21tdW5pdHkgZ3VpZGVsaW5lcyBhbmQgc3RhbmRhcmRzIGZvciBwYXJ0aWNpcGF0aW9uLgoKLS0tCgojIyBBY2tub3dsZWRnZW1lbnRzCgpMYW5nR3JhcGggaXMgaW5zcGlyZWQgYnkgW1ByZWdlbF0oaHR0cHM6Ly9yZXNlYXJjaC5nb29nbGUvcHVicy9wdWIzNzI1Mi8pIGFuZCBbQXBhY2hlIEJlYW1dKGh0dHBzOi8vYmVhbS5hcGFjaGUub3JnLykuIFRoZSBwdWJsaWMgaW50ZXJmYWNlIGRyYXdzIGluc3BpcmF0aW9uIGZyb20gW05ldHdvcmtYXShodHRwczovL25ldHdvcmt4Lm9yZy9kb2N1bWVudGF0aW9uL2xhdGVzdC8pLiBMYW5nR3JhcGggaXMgYnVpbHQgYnkgTGFuZ0NoYWluIEluYywgdGhlIGNyZWF0b3JzIG9mIExhbmdDaGFpbiwgYnV0IGNhbiBiZSB1c2VkIHdpdGhvdXQgTGFuZ0NoYWluLgo=",
+      "encoding": "base64"
+    },
+    "/repos/langchain-ai/langgraph/releases?per_page=5": [
+      {
+        "html_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16",
+        "id": 415421744,
+        "tag_name": "1.2.16",
+        "name": "langgraph==1.2.16",
+        "updated_at": "2026-10-16T22:11:28Z",
+        "published_at": "2026-10-16T22:11:28Z",
+        "body": "Changes since 1.2.15\n\n* release(langgraph): 1.2.16 (#9334)\n* fix(langgraph): let other tasks finish when a resume value is invalid (#9265)\n* fix(langgraph): apply a resumed Command's update once (#9322)\n* fix(langgraph): stop a subgraph from rerunning its finished tasks on resume (#9315)\n* fix(langgraph): save a resumed exit run's pending writes once (#9314)\n* release(prebuilt): 1.1.1 (#9316)\n* release(checkpoint-postgres): 3.2.0 (#9313)\n* feat(checkpoint-postgres): add prune to PostgresSaver and AsyncPostgresSaver (#9290)\n* fix(langgraph): keep a DeltaChannel's value when its field changes to a plain reducer (#9302)\n* release(checkpoint-postgres): 3.1.3 (#9287)\n* release(checkpoint-sqlite): 3.1.2 (#9288)"
+      },
+      {
+        "html_url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.8",
+        "id": 415420363,
+        "tag_name": "sdk==0.4.8",
+        "name": "langgraph-sdk==0.4.8",
+        "updated_at": "2026-10-16T22:09:01Z",
+        "published_at": "2026-10-16T22:09:01Z",
+        "body": "Changes since sdk==0.4.7\n\n* release(langgraph): 1.2.16 (#9334)\n* release(sdk-py): 0.4.8 (#9335)\n* fix(sdk-py): surface thread stream errors and stop retrying a rejected stream (#9317)\n* release(prebuilt): 1.1.1 (#9316)"
+      },
+      {
+        "html_url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.36",
+        "id": 415170324,
+        "tag_name": "cli==0.4.36",
+        "name": "langgraph-cli==0.4.36",
+        "updated_at": "2026-10-16T16:39:14Z",
+        "published_at": "2026-10-16T16:39:14Z",
+        "body": "Changes since cli==0.4.35\n\n* release(cli): 0.4.36 (#9330)\n* fix(cli): accept serverless and dedicated deployment aliases (#9325)\n* fix(cli): push through the active Docker context in langgraph deploy (#9321)"
+      },
+      {
+        "html_url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1",
+        "id": 413420502,
+        "tag_name": "prebuilt==1.1.1",
+        "name": "langgraph-prebuilt==1.1.1",
+        "updated_at": "2026-10-15T04:32:40Z",
+        "published_at": "2026-10-15T04:32:40Z",
+        "body": "Changes since prebuilt==1.1.0\n\n* release(prebuilt): 1.1.1 (#9316)\n* release(checkpoint-postgres): 3.2.0 (#9313)\n* release(checkpoint-postgres): 3.1.3 (#9287)\n* release(checkpoint-sqlite): 3.1.2 (#9288)\n* release(langgraph): 1.2.15 (#9283)\n* fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values (#9232)\n* fix: order delta channel replay by task path (#8544)\n* release(langgraph): 1.2.14 (#9215)\n* release(langgraph): 1.2.13 (#9205)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 5 updates (#9149)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/prebuilt (#9130)\n* release(langgraph): 1.2.12 (#8987)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779)\n* chore(deps-dev): bump syrupy from 5.5.3 to 6.0.0 in /libs/prebuilt in the major group (#8780)\n* chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 3 updates (#8774)\n* release(langgraph): 1.2.11 (#8595)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8533)\n* chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532)\n* release(checkpoint-postgres): 3.1.2 (#8565)\n* release(check"
+      },
+      {
+        "html_url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.35",
+        "id": 412922483,
+        "tag_name": "cli==0.4.35",
+        "name": "langgraph-cli==0.4.35",
+        "updated_at": "2026-10-14T16:11:12Z",
+        "published_at": "2026-10-14T16:11:12Z",
+        "body": "Changes since cli==0.4.34\n\n* release(cli): 0.4.35 (#9310)\n* feat(cli): add --image-pull-secret for deploying through a private registry (#9305)\n* feat(cli): log in with the registry username the control plane returns (#9301)\n* fix(cli): preserve failed deployment build logs (#9308)\n* chore(deps): bump handlebars from 4.7.9 to 4.7.10 in /libs/cli/js-examples (#9286)"
+      }
+    ],
+    "/repos/langgenius/dify/issues/44292": {
+      "html_url": "https://github.com/langgenius/dify/issues/44292",
+      "id": 5910400131,
+      "number": 44292,
+      "title": "refactor(web): replace the legacy Mermaid renderer with Pele",
+      "state": "closed",
+      "updated_at": "2026-10-18T15:13:20Z",
+      "type": null,
+      "body": "## Problem\n\nMarkdown Mermaid diagrams currently depend on a large feature-local Mermaid.js integration with separate rendering, theme, preview, and export behavior. We want to replace that implementation with Pele and align preview composition with the current Dify UI Dialog contracts.\n\n## Expected behavior\n\n- Render Mermaid code blocks using Pele, with application theme tokens and bounded parsing/output.\n- Preserve the last valid drawing during incomplete updates and open a stable preview snapshot.\n- Provide a full-screen, centered canvas with consistent zoom, keyboard interaction, image copy, SVG download, and opening the complete diagram in a new tab.\n- Use Dify UI Dialog primitives for focus and overlay lifecycle, and remove the previous renderer and obsolete controls.\n\n## Validation scope\n\nCover rendering, incomplete-input recovery, preview lifecycle, zoom geometry, accessibility, and export behavior through the public Markdown/diagram entrypoints. Verify the running development application and Storybook as well as automated tests.\n"
+    },
+    "/repos/langgenius/dify/issues/43455": {
+      "html_url": "https://github.com/langgenius/dify/issues/43455",
+      "id": 5687616015,
+      "number": 43455,
+      "title": "[Bug] ask_human can publish a form without a resumable Agent continuation",
+      "state": "open",
+      "updated_at": "2026-10-18T14:04:25Z",
+      "type": null,
+      "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/langgenius/dify/discussions/categories/general).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] 【中文用户 & Non English User】请使用英语提交，否则会被关闭 ：）\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### Dify version\n\nSource checkout of main at `43af5082d3c4ab8a96067370d2f86f214e3c85ae`.\n\n### Cloud or Self Hosted\n\nSelf Hosted (Source)\n\n### Steps to reproduce\n\nThis was reproduced in the source-level Workflow Agent and Agent App tests, using the real control flow with controlled persistence failures.\n\n1. Let an Agent run pause for `ask_human` and create a form.\n2. Make persistence of the session snapshot and pending form/tool correlation fail, or supply a paused terminal"
+    },
+    "/repos/langgenius/dify/issues/44289": {
+      "html_url": "https://github.com/langgenius/dify/issues/44289",
+      "id": 5908252709,
+      "number": 44289,
+      "title": "Notion page search textbox has no explicit accessible name",
+      "state": "closed",
+      "updated_at": "2026-10-18T10:12:28Z",
+      "type": null,
+      "body": "### Self Checks\n\n- [x] I have searched for existing issues and pull requests for this problem.\n\n### Dify version\n\nmain\n\n### Steps to reproduce\n\nOpen the Notion page picker when importing knowledge, then inspect the search textbox's computed accessible name. The input has a localized placeholder but no label or ARIA naming relationship; its accessible name is empty. Typing also removes the visible placeholder.\n\n### Expected behavior\n\nThe search textbox should have a persistent localized accessible name, including while a query is entered. Reuse the existing Search pages translation without changing the visual layout.\n\n### Proposed fix\n\nAdd an explicit aria-label and extend the existing picker interaction test to locate the textbox by role and name before typing, after typing, and after clearing.\n"
+    },
+    "/repos/langgenius/dify/issues/43823": {
+      "html_url": "https://github.com/langgenius/dify/issues/43823",
+      "id": 5789862125,
+      "number": 43823,
+      "title": "Agent app: parallel tool calls leave permanently spinning, empty tool entries in the thought panel",
+      "state": "closed",
+      "updated_at": "2026-10-18T07:45:54Z",
+      "type": null,
+      "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] This is only for bug report, if you would like to ask a question, please head to [Discussions](https://github.com/langgenius/dify/discussions/categories/general).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] 【中文用户 & Non English User】请使用英语提交，否则会被关闭 ：）\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### Dify version\n\nDify 1.17.1\n\n### Cloud or Self Hosted\n\nSelf Hosted (Docker)\n\n### Steps to reproduce\n\n1. Create an **Agent app** with at least two independently callable query tools.\n2. Send a message that makes the model call **two tools in parallel in the same round** (any model that emits parallel tool calls).\n3. While the answer is still streaming, open the thought panel (\"思考过程\").\n\n\n### ✔️ Expected Behavior\n\nEach tool entry completes with its own observation once the "
+    },
+    "/repos/langgenius/dify/issues/43849": {
+      "html_url": "https://github.com/langgenius/dify/issues/43849",
+      "id": 5797563567,
+      "number": 43849,
+      "title": "[Feature Request] Show application availability status and support filtering by unavailable dependencies",
+      "state": "open",
+      "updated_at": "2026-10-18T06:32:26Z",
+      "type": null,
+      "body": "### Self Checks\n\n- [x] I have read the [Contributing Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md) and [Language Policy](https://github.com/langgenius/dify/issues/1542).\n- [x] I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.\n- [x] I confirm that I am using English to submit this report, otherwise it will be closed.\n- [x] Please do not modify this template :) and fill in all the required fields.\n\n### 1. Is this request related to a challenge you're experiencing? Tell me about your story.\n\nDevelopers currently have no quick way to identify all applications affected by an unavailable dependency. For example, after disabling a model, I need to inspect applications individually to find which ones use it and need to be repaired.\n\nPlease give applications an Available / Unavailable status, similar to knowledge bases, and expose it in the Studio application list. If an application uses an unavailable plugin, model, tool, knowledge base, or any other dependency that prevents it from functioning, the application should be marked Unavailable.\n\nSupport a Status filter with **Available**, *"
+    }
+  }
+}
