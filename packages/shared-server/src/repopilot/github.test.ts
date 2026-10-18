@@ -115,7 +115,9 @@ test("missing README, private repositories, redirect failures and host whitelist
 });
 test("bounded retries honor Retry-After, budget and deadline", async () => {
   let calls = 0;
-  const sleep = vi.fn(async () => {});
+  const sleep = vi.fn(async () => {
+    return undefined;
+  });
   const client = new GitHubClient({
     sleep,
     fetcher: async (input) =>

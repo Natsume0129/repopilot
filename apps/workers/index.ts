@@ -36,6 +36,10 @@ let feedRefreshingWorker:
   | undefined;
 
 const workerBuilders = {
+  repopilot: async () => {
+    const { RepoPilotWorker } = await import("./workers/repopilotWorker");
+    return new RepoPilotWorker();
+  },
   crawler: async () => {
     const { CrawlerWorker } = await import("./workers/crawlerWorker");
     await LinkCrawlerQueue.ensureInit();

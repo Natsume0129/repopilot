@@ -1,11 +1,13 @@
 import { beforeEach, expect, test } from "vitest";
 import { eq } from "drizzle-orm";
+import { processNextResearch } from "@karakeep/shared-server/repopilot/runner";
 import { researchRuns } from "@karakeep/db/schema";
 import {
   claimResearchJob,
   leaseFilter,
 } from "@karakeep/shared-server/repopilot/jobs";
-import { defaultBeforeEach, type CustomTestContext } from "../testUtils";
+import { defaultBeforeEach } from "../testUtils";
+import type { CustomTestContext } from "../testUtils";
 
 beforeEach<CustomTestContext>(defaultBeforeEach(true));
 const input = {
@@ -101,4 +103,28 @@ test<CustomTestContext>("retry creates separate run; bookmark reuse and valid fe
     adopted: true,
   });
   expect((await a.repopilot.getRun({ id: runId })).feedback).toHaveLength(1);
+});
+
+test<CustomTestContext>("worker persists completed graph, references and safe missing live configuration failure", async ({
+  apiCallers: [a],
+  db,
+}) => {
+  const { runId } = await a.repopilot.createRun(input);
+  expect(await processNextResearch(db)).toBe(true);
+  const run = await a.repopilot.getRun({ id: runId });
+  expect(run.status).toBe("completed");
+  expect(JSON.parse(run.reportJson!).opportunities).toHaveLength(3);
+  expect(run.evidence.length).toBeGreaterThan(5);
+  expect(run.inputTokens).toBeNull();
+  const { runId: liveId } = await a.repopilot.createRun(input);
+  await db
+    .update(researchRuns)
+    .set({ mode: "live" })
+    .where(eq(researchRuns.id, liveId));
+  const { fixtureFetch } =
+    await import("@karakeep/shared-server/repopilot/fixtures");
+  await processNextResearch(db, { fetcher: fixtureFetch });
+  const failed = await a.repopilot.getRun({ id: liveId });
+  expect(failed.status).toBe("failed");
+  expect(failed.errorCode).toBe("LLM_NOT_CONFIGURED");
 });

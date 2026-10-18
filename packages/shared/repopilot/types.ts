@@ -1,4 +1,4 @@
-export type Evidence = {
+export interface Evidence {
   id: string;
   sourceType:
     | "repo_readme"
@@ -18,8 +18,8 @@ export type Evidence = {
     publishedAt?: string;
     number?: number;
   };
-};
-export type RepoMetadata = {
+}
+export interface RepoMetadata {
   fullName: string;
   url: string;
   description: string;
@@ -28,11 +28,11 @@ export type RepoMetadata = {
   archived: boolean;
   topics: string[];
   fetchedAt: string;
-};
-export type Trace = {
+}
+export interface Trace {
   node: string;
   durationMs: number;
   outcome: "ok" | "error";
   githubCalls: number;
   llmCalls: number;
-};
+}

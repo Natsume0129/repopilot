@@ -49,3 +49,15 @@
 - `node scripts/repopilot-record-fixture.mjs`: PASS, actually recorded 8 public endpoints from Dify and LangGraph, 5 non-PR issues; only allowlisted fields, no authors/credentials. Fixtures preserve recordedAt; explicit mock adapter never falls back to network.
 - Direct unauthenticated GitHub metadata smoke for langgenius/dify: HTTP 200. LLM/live end-to-end still unverified.
 - `npx --yes pnpm@11.2.1 exec vitest run src/repopilot/github.test.ts` (packages/shared-server): PASS 4 scenarios covering cache, no-network mock, pagination, dedup, PR exclusion, empty issues, missing README, private rejection, redirect handling, rate limit, budget and timeout.
+
+## Phase 4
+
+- Installed LangGraph.js 1.5.1; verified StateSchema/StateGraph API against official graph documentation and installed declarations. The real graph executes collection, pain extraction, model-selected search, deterministic gap check, a single bounded supplement, generation, reference verification/scoring and save preparation. Existing workers process durable jobs separately from HTTP.
+- JSON/Zod report contract, deterministic recorded Mock Provider, configurable HTTPS OpenAI-compatible Chat Completions provider. Provider uses JSON mode plus local schema validation, at most one invalid-output retry, 5 requests, 5,000 completion tokens/request and a cumulative 300,000 UTF-8-byte input bound. No hardcoded model or costs; actual usage only.
+- References rebuilt from collected sources; fabricated IDs removed, confidence/score caps for sparse evidence, duplicate directions removed (one regeneration opportunity), feasibility warnings for constrained profiles.
+- Added local event records, fenced final saves and safe failure messages. Mock for other repositories explicitly fails rather than relabelling Dify data.
+- Dependency compatibility: shared uses locked Zod 4.3.6 while liteque originally resolved 4.6.5. Pin shared-server to 4.3.6 and override only liteque>zod to 4.3.6; this fixes cross-package schema type incompatibility without casts. Removed stale TypeScript incremental caches after dependency change.
+- `vitest run src/repopilot/graph.test.ts` in shared-server: PASS 3 scenarios (actual supplement branch, counts, schema, references, duplicate/feasibility checks, abort and AI scope).
+- `vitest run routers/repopilot.test.ts` in trpc: PASS 3 scenarios including completed persisted mock report and safe missing-live-config failure.
+- `pnpm typecheck --filter=@karakeep/shared-server --filter=@karakeep/trpc --filter=@karakeep/workers`: initially FAIL (Zod mismatch and bookmark enum), fixed; final PASS all 3 packages.
+- Scoped oxlint and oxfmt: PASS after style corrections. Real paid LLM has not been invoked.

@@ -8,12 +8,9 @@ import {
   researchEvents,
 } from "@karakeep/db/schema";
 import { createRunSchema } from "@karakeep/shared/repopilot/input";
-import {
-  createCallerFactory,
-  router,
-  sessionProcedure,
-  type AuthedContext,
-} from "../index";
+import { BookmarkTypes } from "@karakeep/shared/types/bookmarks";
+import { createCallerFactory, router, sessionProcedure } from "../index";
+import type { AuthedContext } from "../index";
 import { bookmarksAppRouter } from "./bookmarks";
 
 const idInput = z.object({ id: z.uuid() });
@@ -167,7 +164,7 @@ export const repopilotRouter = router({
       if (run.bookmarkId) return { bookmarkId: run.bookmarkId };
       const bookmark = await createCallerFactory(bookmarksAppRouter)(
         ctx,
-      ).createBookmark({ type: "link", url: run.repoUrl });
+      ).createBookmark({ type: BookmarkTypes.LINK, url: run.repoUrl });
       await ctx.db
         .update(researchRuns)
         .set({ bookmarkId: bookmark.id })
