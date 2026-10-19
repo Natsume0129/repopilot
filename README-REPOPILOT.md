@@ -1,6 +1,6 @@
 # RepoPilot — AI 开源产品创新 Agent
 
-基于真实 Karakeep checkout 的 TypeScript MVP。保留原登录、收藏和导航，新增“公开 AI GitHub 仓库 → 证据采集 → LangGraph 条件补查 → 创新报告 → 收藏/反馈/Markdown 导出”。本地 Mock 闭环已运行；真实 GitHub 采集已验证；真实 LLM 尚未验证。
+基于真实 Karakeep checkout 的 TypeScript MVP。保留原登录、收藏和导航，新增“公开 AI GitHub 仓库 → 证据采集 → LangGraph 条件补查 → 创新报告 → 收藏/反馈/Markdown 导出”。本地 Mock 闭环已运行；真实 GitHub 采集及真实 LLM 后端烟雾测试已通过；Live 报告仍有技术来源不足警告，完整验收未完成。
 
 上游：<https://github.com/karakeep-app/karakeep>，基线 `c184eec6c9bc6df1b61c32e803ceb17dd3480596`。当前分支 `feat/repopilot-mvp`，origin 仍是官方仓库，没有创建个人远端 Fork 或推送。
 
@@ -44,7 +44,7 @@ Base URL 为你认可的 HTTPS OpenAI-compatible 地址，通常以 `/v1` 结尾
 npx --yes pnpm@11.2.1 repopilot:live
 ```
 
-该命令明确启用 Live；用户开始研究时会调用配置的模型并可能产生费用。真实端到端尚未验收，Provider 兼容性、输出质量、引用相关性须在接入后检查。普通用户不能在页面修改模型地址或 Token。
+该命令明确启用 Live；用户开始研究时会调用配置的模型并可能产生费用。已使用本地配置跑通一次 Dify 真实后端研究，输出三个方向，执行 11 次 GitHub 请求；存在技术来源缺失和摘录截断警告。Live 浏览器/持久化闭环、输出质量及引用语义相关性仍待验收。普通用户不能在页面修改模型地址或 Token。
 
 也可使用上游 `pnpm web` 与 `pnpm workers` 分别运行，此时必须同步各应用自己的 `.env`，并明确设置模式。统一 RepoPilot 启动器优先使用根 `.env`，避免配置副本不一致。
 

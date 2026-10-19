@@ -65,10 +65,19 @@
 ## 未解决 / SKIPPED
 
 - **包级 format：FAIL。** `pnpm format` 加上述 6 个 filter 全部报告未改上游文件格式差异。`git ls-files --eol` 确认这些文件是 index LF / worktree CRLF；示例 `packages/shared/assetdb.ts`、`packages/db/drizzle.ts`、`apps/web/server/auth.ts` 没有代码 diff。本次改动单独格式检查 PASS；没有批量修改无关文件。
-- **真实 LLM 端到端：SKIPPED（未配置 API Key/Base URL/模型名）。** 实际执行 `pnpm repopilot:smoke:live` 输出 SKIPPED。Mock 不等价于 Live 成功。
+- **初次交付时真实 LLM：SKIPPED（当时未配置凭据）。** 后续用户配置后已执行真实后端烟雾测试，结果见下方追加记录。Live 浏览器/持久化闭环尚未测试。
 - **Meilisearch 全文搜索：SKIPPED（服务未配置）。**
 - **原 crawler 对 GitHub 网页抓取：FAIL（上游 DNS helper 的 ECONNREFUSED）。** worker 进程启动和原书签创建/持久化 PASS，但网页内容抓取不算通过。未通过关闭 SSRF/IP 验证绕过。
 - 生产镜像/生产构建、Linux/macOS 实机、全仓套件、进程强杀后真实时间恢复演练：未执行。恢复逻辑以租约/超时集成测试验证。
 - 未进行真实用户访谈、创新价值评测、引用语义有效率评测、成本统计。事件仅支持后续本地分析，不提供虚构增长指标。
 
-结论：**可运行的本地 Mock MVP 和真实 GitHub 采集已验证；完整 Live 与原抓取/搜索环境仍待验收。**
+## 用户授权后的 Live 验收追加记录（2026-10-19）
+
+- 用户明确要求运行 Live 验收；只检查配置存在性，不输出 API Key。模型地址、模型名、密钥齐全，GITHUB_TOKEN 缺失，使用匿名 GitHub 配额。
+- 实际命令：`npx --yes pnpm@11.2.1 repopilot:smoke:live`，cwd 为项目根目录。
+- 退出码 **0**，脚本输出 **PASS**，机会数 **3**，GitHub 请求 **11**。执行的是 LiveProvider + 实际 LangGraph + 实际 GitHub 工具，不是 MockProvider。
+- 警告原文：`缺少相关技术来源`；`部分 issue 正文已截断`；`技术机会来自有限样本，不能证明市场趋势；关闭 issue 不等于需求已实现。`；`来源事实见引用；方案为模型推断；假设须用户验证。`
+- 结论分层：**真实后端调用/报告结构与程序引用校验 PASS；技术证据完整性未通过完整验收**。不能把脚本 PASS 解读为推荐质量合格或来源充分。
+- 本次脚本未持久化报告，未切换现有网页的 Mock 启动模式，未跑 Live 浏览器收藏/导出流程，未额外人工核对本次模型论点与来源的语义一致性。脚本未输出模型请求数、usage 或费用，因此不报告这些数值。
+
+结论：**本地 Mock MVP、真实 GitHub 采集和一次真实 LLM 后端研究已运行；完整 Live 证据质量、浏览器闭环与原抓取/搜索环境仍待验收。**
